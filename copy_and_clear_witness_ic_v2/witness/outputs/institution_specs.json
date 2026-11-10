@@ -1,0 +1,2048 @@
+{
+  "IA": {
+    "allocation": {
+      "capacity_rule": "round-robin in ascending capacity-ID order over available offered capacities",
+      "cursor_start": "first capacity (C000)",
+      "eligibility": {
+        "kind": "registered_supply",
+        "registration_event": "offer_registered",
+        "task_scope": "all"
+      },
+      "helper": "fifo_round_robin_match",
+      "max_active_attempts_per_capacity": 1,
+      "slot_rule": "lowest-ID empty slot",
+      "task_rule": "FIFO: lowest-ID open task"
+    },
+    "external_interfaces": {
+      "interfaces": [],
+      "note": "closed witness"
+    },
+    "information": {
+      "event_vocabulary": [
+        "offer_registered",
+        "provider_bound",
+        "obligations_discharged"
+      ],
+      "observables": [
+        "task post",
+        "offer",
+        "match",
+        "binding",
+        "result",
+        "verification",
+        "settlement"
+      ],
+      "required_events": [
+        "offer_registered",
+        "provider_bound"
+      ]
+    },
+    "institution_id": "IA",
+    "label": "Conventional agent-task market",
+    "positions_and_assignments": {
+      "assignments": {
+        "baseline_capacity": "owned by its founding source provider",
+        "copied_capacity": "owned by a new independent copied supplier-principal CPkkk, k = copy draw index",
+        "executor": "the capacity owner itself (a persistent principal)",
+        "prospective_payee": "the capacity owner"
+      },
+      "created_principals": {
+        "count": {
+          "ref": "copied_capacity_count"
+        },
+        "does_not_inherit": [
+          "balances",
+          "contracts",
+          "liabilities",
+          "reputation",
+          "history"
+        ],
+        "inherits": [
+          "module"
+        ],
+        "initial_balance": 0,
+        "position": "provider",
+        "principal_class": "copied_supplier"
+      },
+      "executor_kinds": [
+        "principal"
+      ],
+      "identity_equalities": [
+        [
+          "provider",
+          "capacity_holder",
+          "performance_obligor",
+          "executor",
+          "payee"
+        ]
+      ],
+      "positions": [
+        {
+          "claims_or_liabilities": [
+            "an admissible attempt",
+            "correct verification",
+            "successful performance if produced"
+          ],
+          "duties": [
+            "maintain each reservation until verified success or failure"
+          ],
+          "holders": "founding requesters",
+          "position": "requester",
+          "powers_or_liberties": [
+            "post its prefunded tasks at initialization"
+          ]
+        },
+        {
+          "claims_or_liabilities": [
+            "no economic stake in any outcome"
+          ],
+          "duties": [
+            "apply the published rules",
+            "preserve all invariants"
+          ],
+          "holders": "the deterministic kernel",
+          "position": "mechanism",
+          "powers_or_liberties": [
+            "register supply",
+            "match tasks",
+            "assign slots",
+            "verify paths",
+            "update state",
+            "settle accounts"
+          ]
+        },
+        {
+          "bundled_roles": [
+            "capacity_holder",
+            "performance_obligor",
+            "executor",
+            "payee"
+          ],
+          "claims_or_liabilities": [
+            "success-contingent payment claim on the task reservation"
+          ],
+          "duties": [
+            "perform the matched attempt once bound"
+          ],
+          "holders": "founding providers P### and copied supplier-principals CP###",
+          "lifetime": "durable for the whole batch",
+          "position": "provider",
+          "powers_or_liberties": [
+            "register a batch-wide standing offer over its owned capacity",
+            "use its owned capacity to perform matched tasks"
+          ]
+        }
+      ]
+    },
+    "process": {
+      "hooks": {
+        "authorize_attempt": "provider_bound: owner becomes obligor, executor and prospective payee",
+        "finalize_attempt": "binding marked discharged; provider persists",
+        "register_supply": "one offer_registered per capacity",
+        "settlement_instruction": "transfer to the owner on success, release on failure; obligations_discharged"
+      },
+      "sequence": [
+        "register_offer",
+        "match",
+        "bind_provider",
+        "execute",
+        "verify",
+        "settle",
+        "release"
+      ]
+    },
+    "relations": {
+      "relations": [
+        {
+          "content": "offer the owned capacity for every task in the batch",
+          "holder": "provider",
+          "id": "standing_offer",
+          "kind": "standing_offer",
+          "revocable_during_batch": false,
+          "scope": "all_tasks",
+          "validity": "batch"
+        },
+        {
+          "content": "use the owned capacity to perform matched tasks",
+          "holder": "provider",
+          "id": "capacity_use_liberty",
+          "kind": "liberty"
+        },
+        {
+          "bearer": "provider",
+          "content": "perform the matched attempt",
+          "correlative_claim_holder": "requester",
+          "created_by": "provider_bound",
+          "discharged_by": "verification of the attempt",
+          "id": "performance_duty",
+          "kind": "duty"
+        },
+        {
+          "against": "requester reservation",
+          "condition": "verified success",
+          "content": "task reward",
+          "holder": "provider",
+          "id": "payment_claim",
+          "kind": "claim"
+        },
+        {
+          "content": "bind an offering provider to an open task",
+          "holder": "mechanism",
+          "id": "mechanism_matching_power",
+          "kind": "power"
+        }
+      ]
+    },
+    "state": {
+      "executor_states": [],
+      "kernel_state_used": [
+        "tasks",
+        "accounts",
+        "attempts",
+        "outcomes"
+      ],
+      "registries": [
+        "principal and provider registry",
+        "capacity ownership",
+        "standing offers",
+        "provider bindings",
+        "prospective and realized payees",
+        "allocation cursor"
+      ]
+    },
+    "temporal": {
+      "attempt_duration": "max(1, planner expansions) simulated time units",
+      "capacity_lifetime": "durable (whole batch)",
+      "concurrency": "up to one attempt per compute slot, attempts run concurrently",
+      "initialization_precedence": [
+        "principals",
+        "capacities",
+        "copied principals",
+        "offers",
+        "task posting and reservation"
+      ],
+      "offer_validity": "whole batch, irrevocable",
+      "provider_lifetime": "durable (whole batch)"
+    },
+    "trace_requirements": [
+      {
+        "constraints": [
+          {
+            "field": "principal_id",
+            "op": "has_account"
+          }
+        ],
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "Every task is posted exactly once by a principal with an account.",
+        "distinct": "task_id",
+        "id": "common.tasks_posted",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "task_posted"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "join": {
+              "principal_id": "principal_id",
+              "task_id": "task_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "task_posted"
+            }
+          }
+        ],
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "Every posted task is prefunded by a reservation from its requester.",
+        "distinct": "task_id",
+        "id": "common.tasks_prefunded",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "credit_reserved"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "join": {
+              "task_id": "task_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "credit_reserved"
+            }
+          }
+        ],
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "Every task is matched exactly once, after its reservation.",
+        "distinct": "task_id",
+        "id": "common.tasks_matched",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "task_matched"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "join": {
+              "capacity_id": "capacity_id",
+              "task_id": "task_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "attempt_completed"
+            }
+          }
+        ],
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "Every task's attempt is mechanically verified after it completes.",
+        "distinct": "task_id",
+        "id": "common.tasks_verified",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": [
+            "verification_succeeded",
+            "verification_failed"
+          ]
+        }
+      },
+      {
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "Every task's reservation is transferred or released exactly once.",
+        "distinct": "task_id",
+        "id": "common.tasks_settled",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": [
+            "credit_transferred",
+            "credit_released"
+          ]
+        }
+      },
+      {
+        "constraints": [
+          {
+            "join": {
+              "capacity_id": "capacity_id",
+              "task_id": "task_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "verification_succeeded"
+            }
+          }
+        ],
+        "count": 1,
+        "description": "At least one task succeeds through a copy-derived capacity and is paid after verification.",
+        "distinct": "task_id",
+        "id": "common.copied_capacity_settled_success",
+        "quantifier": "at_least",
+        "select": {
+          "event_type": "credit_transferred",
+          "where": {
+            "details.capacity_origin": "copy"
+          }
+        }
+      },
+      {
+        "count": 1,
+        "description": "The run terminates cleanly exactly once.",
+        "id": "common.run_completed",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "run_completed"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "field": "amount",
+            "op": "field_equals",
+            "value": 0
+          },
+          {
+            "field": "principal_id",
+            "op": "has_account"
+          },
+          {
+            "fields": [
+              "principal_id",
+              "details.copied_from_provider_id"
+            ],
+            "op": "fields_distinct"
+          }
+        ],
+        "count": {
+          "ref": "copied_capacity_count"
+        },
+        "description": "A new independent zero-balance principal is created for every copied capacity.",
+        "distinct": "principal_id",
+        "id": "IA.copied_principals_created",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "principal_created",
+          "where": {
+            "details.principal_class": "copied_supplier"
+          }
+        }
+      },
+      {
+        "constraints": [
+          {
+            "fields": [
+              "principal_id",
+              "details.capacity_owner_id"
+            ],
+            "op": "fields_equal"
+          },
+          {
+            "field": "details.scope",
+            "op": "field_equals",
+            "value": "all_tasks"
+          }
+        ],
+        "count": {
+          "ref": "capacity_count"
+        },
+        "description": "Every capacity carries one batch-wide standing offer by its owner.",
+        "distinct": "capacity_id",
+        "id": "IA.offers_registered",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "offer_registered"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "join": {
+              "capacity_id": "details.assigned_capacity_id",
+              "principal_id": "principal_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "principal_created",
+              "where": {
+                "details.principal_class": "copied_supplier"
+              }
+            }
+          },
+          {
+            "fields": [
+              "principal_id",
+              "details.source_provider_id"
+            ],
+            "op": "fields_distinct"
+          }
+        ],
+        "count": {
+          "ref": "copied_capacity_count"
+        },
+        "description": "Each copied capacity is owned and offered by the copied principal created for it.",
+        "distinct": "capacity_id",
+        "id": "IA.copied_capacities_owned_by_copied_principals",
+        "quantifier": "all",
+        "select": {
+          "event_type": "offer_registered",
+          "where": {
+            "details.capacity_origin": "copy"
+          }
+        }
+      },
+      {
+        "constraints": [
+          {
+            "fields": [
+              "principal_id",
+              "executor_id",
+              "details.obligor_id",
+              "details.prospective_payee_id",
+              "details.capacity_owner_id"
+            ],
+            "op": "fields_equal"
+          },
+          {
+            "field": "principal_id",
+            "op": "field_in_events",
+            "select": {
+              "event_type": "principal_created",
+              "where": {
+                "details.principal_class": "copied_supplier"
+              }
+            },
+            "source_field": "principal_id"
+          },
+          {
+            "join": {
+              "principal_id": "principal_id",
+              "task_id": "task_id"
+            },
+            "op": "followed_by",
+            "select": {
+              "event_type": "credit_transferred"
+            }
+          }
+        ],
+        "count": 1,
+        "description": "A copied-capacity provider_bound event bundles executor, obligor and prospective payee in one copied principal, who is then paid.",
+        "id": "IA.copied_provider_bound_and_paid",
+        "quantifier": "at_least",
+        "select": {
+          "event_type": "provider_bound",
+          "where": {
+            "details.capacity_origin": "copy"
+          }
+        }
+      },
+      {
+        "constraints": [
+          {
+            "field": "principal_id",
+            "op": "field_in_events",
+            "select": {
+              "event_type": "principal_created",
+              "where": {
+                "details.principal_class": "copied_supplier"
+              }
+            },
+            "source_field": "principal_id"
+          },
+          {
+            "fields": [
+              "principal_id",
+              "details.source_provider_id"
+            ],
+            "op": "fields_distinct"
+          },
+          {
+            "join": {
+              "task_id": "task_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "verification_succeeded"
+            }
+          }
+        ],
+        "count": 1,
+        "description": "A successful credit transfer reaches a copied principal, not the copy source.",
+        "id": "IA.copied_principal_paid",
+        "quantifier": "at_least",
+        "select": {
+          "event_type": "credit_transferred",
+          "where": {
+            "details.capacity_origin": "copy"
+          }
+        }
+      },
+      {
+        "constraints": [
+          {
+            "fields": [
+              "principal_id",
+              "executor_id",
+              "details.obligor_id",
+              "details.prospective_payee_id",
+              "details.capacity_owner_id"
+            ],
+            "op": "fields_equal"
+          },
+          {
+            "field": "executor_id",
+            "op": "has_account"
+          }
+        ],
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "In every binding the provider is capacity holder, obligor, executor and payee.",
+        "distinct": "task_id",
+        "id": "IA.every_binding_bundled",
+        "quantifier": "all",
+        "select": {
+          "event_type": "provider_bound"
+        }
+      }
+    ],
+    "value_and_settlement": {
+      "accounts": "integer, nonnegative, reservation-backed",
+      "credit_domain": "task_credit",
+      "linkage": "verified performance discharges the performance duty and activates the provider's payment claim against the requester's reservation",
+      "payee_rule": "the provider that owns and executes through the selected capacity (a copied principal for a copied capacity)",
+      "settlement_rules": {
+        "on_failure": "release_reservation",
+        "on_success": "transfer_reservation_to_prospective_payee"
+      }
+    }
+  },
+  "IB": {
+    "allocation": {
+      "capacity_rule": "round-robin in ascending capacity-ID order over available licensed capacities",
+      "cursor_start": "first capacity (C000)",
+      "eligibility": {
+        "kind": "registered_supply",
+        "registration_event": "license_registered",
+        "task_scope": "all"
+      },
+      "helper": "fifo_round_robin_match",
+      "max_active_attempts_per_capacity": 1,
+      "slot_rule": "lowest-ID empty slot",
+      "task_rule": "FIFO: lowest-ID open task"
+    },
+    "external_interfaces": {
+      "interfaces": [],
+      "note": "closed witness"
+    },
+    "information": {
+      "event_vocabulary": [
+        "license_registered",
+        "executor_instantiated",
+        "obligations_discharged",
+        "executor_terminated"
+      ],
+      "observables": [
+        "task post",
+        "license",
+        "match",
+        "instantiation",
+        "result",
+        "verification",
+        "termination",
+        "settlement"
+      ],
+      "required_events": [
+        "license_registered",
+        "executor_instantiated",
+        "executor_terminated"
+      ]
+    },
+    "institution_id": "IB",
+    "label": "Copy-and-clear",
+    "positions_and_assignments": {
+      "assignments": {
+        "baseline_capacity": "owned by its founding source provider",
+        "copied_capacity": "remains owned by its recorded founding source provider; no principal is created",
+        "executor": "a fresh temporary executor per attempt",
+        "prospective_payee": "the capacity owner/licensor"
+      },
+      "created_principals": {
+        "count": 0
+      },
+      "executor_kinds": [
+        "temporary"
+      ],
+      "identity_equalities": [
+        [
+          "capacity_owner",
+          "licensor",
+          "payee"
+        ]
+      ],
+      "identity_inequalities": [
+        [
+          "capacity_owner",
+          "temporary_executor"
+        ]
+      ],
+      "positions": [
+        {
+          "claims_or_liabilities": [
+            "an admissible attempt",
+            "correct verification",
+            "successful performance if produced"
+          ],
+          "duties": [
+            "maintain each reservation until verified success or failure"
+          ],
+          "holders": "founding requesters",
+          "position": "requester",
+          "powers_or_liberties": [
+            "post its prefunded tasks at initialization"
+          ]
+        },
+        {
+          "claims_or_liabilities": [
+            "no economic stake in any outcome"
+          ],
+          "duties": [
+            "apply the published rules",
+            "preserve all invariants"
+          ],
+          "holders": "the deterministic kernel",
+          "position": "mechanism",
+          "powers_or_liberties": [
+            "register supply",
+            "match tasks",
+            "assign slots",
+            "verify paths",
+            "update state",
+            "settle accounts"
+          ]
+        },
+        {
+          "bundled_roles": [
+            "capacity_owner",
+            "licensor",
+            "payee"
+          ],
+          "claims_or_liabilities": [
+            "liability to the mechanism's instantiation power within scope",
+            "success-contingent payment claim on the task reservation"
+          ],
+          "duties": [
+            "permit valid one-at-a-time instantiation within the license scope"
+          ],
+          "holders": "founding providers P###",
+          "lifetime": "durable for the whole batch",
+          "position": "competence_owner_licensor",
+          "powers_or_liberties": [
+            "register a batch-wide standing license over each owned capacity"
+          ]
+        },
+        {
+          "claims_or_liabilities": [
+            "none: no account, no payment claim, no ownership, no continuation"
+          ],
+          "duties": [
+            "perform the matched attempt"
+          ],
+          "holders": "mechanism-created process positions X-{task_id}-{capacity_id}",
+          "is_economic_principal": false,
+          "lifetime": "task-bounded: instantiated at match, terminated after verification and settlement",
+          "position": "temporary_executor",
+          "powers_or_liberties": [
+            "occupy one slot and one capacity for one matched attempt"
+          ]
+        }
+      ]
+    },
+    "process": {
+      "hooks": {
+        "attempt_started": "executor state instantiated -> running",
+        "authorize_attempt": "executor_instantiated under the capacity's license",
+        "finalize_attempt": "executor_terminated; license and capacity persist",
+        "register_supply": "one license_registered per capacity",
+        "settlement_instruction": "transfer to the owner/licensor on success, release on failure; obligations_discharged"
+      },
+      "sequence": [
+        "register_license",
+        "match",
+        "instantiate_executor",
+        "execute",
+        "verify",
+        "settle",
+        "terminate",
+        "release"
+      ]
+    },
+    "relations": {
+      "relations": [
+        {
+          "content": "instantiate the licensed capacity for eligible tasks",
+          "grantor": "competence_owner_licensor",
+          "holder": "mechanism",
+          "id": "standing_license",
+          "kind": "license",
+          "max_simultaneous_executors": 1,
+          "revocable_during_batch": false,
+          "scope": "all_tasks",
+          "validity": "batch"
+        },
+        {
+          "content": "create a temporary executor over the licensed capacity",
+          "correlative_liability_holder": "competence_owner_licensor",
+          "holder": "mechanism",
+          "id": "instantiation_power",
+          "kind": "power",
+          "scope": "license scope"
+        },
+        {
+          "bearer": "temporary_executor",
+          "content": "perform the matched attempt",
+          "correlative_claim_holder": "requester",
+          "created_by": "executor_instantiated",
+          "discharged_by": "verification of the attempt",
+          "id": "executor_task_duty",
+          "kind": "duty"
+        },
+        {
+          "against": "requester reservation",
+          "condition": "verified success",
+          "content": "task reward",
+          "holder": "competence_owner_licensor",
+          "id": "owner_payment_claim",
+          "kind": "claim"
+        }
+      ]
+    },
+    "state": {
+      "executor_states": [
+        "instantiated",
+        "running",
+        "terminated"
+      ],
+      "kernel_state_used": [
+        "tasks",
+        "accounts",
+        "attempts",
+        "outcomes"
+      ],
+      "registries": [
+        "owner registry",
+        "license registry",
+        "capacity ownership",
+        "temporary executor lifecycle",
+        "prospective and realized payees",
+        "allocation cursor"
+      ]
+    },
+    "temporal": {
+      "attempt_duration": "max(1, planner expansions) simulated time units",
+      "capacity_lifetime": "durable (termination never deletes a capacity)",
+      "concurrency": "up to one attempt per compute slot, attempts run concurrently",
+      "executor_lifetime": "task-bounded: from authorization to termination after settlement",
+      "initialization_precedence": [
+        "principals",
+        "capacities",
+        "licenses",
+        "task posting and reservation"
+      ],
+      "license_validity": "whole batch, irrevocable"
+    },
+    "trace_requirements": [
+      {
+        "constraints": [
+          {
+            "field": "principal_id",
+            "op": "has_account"
+          }
+        ],
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "Every task is posted exactly once by a principal with an account.",
+        "distinct": "task_id",
+        "id": "common.tasks_posted",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "task_posted"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "join": {
+              "principal_id": "principal_id",
+              "task_id": "task_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "task_posted"
+            }
+          }
+        ],
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "Every posted task is prefunded by a reservation from its requester.",
+        "distinct": "task_id",
+        "id": "common.tasks_prefunded",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "credit_reserved"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "join": {
+              "task_id": "task_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "credit_reserved"
+            }
+          }
+        ],
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "Every task is matched exactly once, after its reservation.",
+        "distinct": "task_id",
+        "id": "common.tasks_matched",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "task_matched"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "join": {
+              "capacity_id": "capacity_id",
+              "task_id": "task_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "attempt_completed"
+            }
+          }
+        ],
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "Every task's attempt is mechanically verified after it completes.",
+        "distinct": "task_id",
+        "id": "common.tasks_verified",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": [
+            "verification_succeeded",
+            "verification_failed"
+          ]
+        }
+      },
+      {
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "Every task's reservation is transferred or released exactly once.",
+        "distinct": "task_id",
+        "id": "common.tasks_settled",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": [
+            "credit_transferred",
+            "credit_released"
+          ]
+        }
+      },
+      {
+        "constraints": [
+          {
+            "join": {
+              "capacity_id": "capacity_id",
+              "task_id": "task_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "verification_succeeded"
+            }
+          }
+        ],
+        "count": 1,
+        "description": "At least one task succeeds through a copy-derived capacity and is paid after verification.",
+        "distinct": "task_id",
+        "id": "common.copied_capacity_settled_success",
+        "quantifier": "at_least",
+        "select": {
+          "event_type": "credit_transferred",
+          "where": {
+            "details.capacity_origin": "copy"
+          }
+        }
+      },
+      {
+        "count": 1,
+        "description": "The run terminates cleanly exactly once.",
+        "id": "common.run_completed",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "run_completed"
+        }
+      },
+      {
+        "count": 0,
+        "description": "Copying creates technical capacity but no new principal.",
+        "id": "IB.no_principals_created",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "principal_created",
+          "where": {
+            "details.origin": "institution"
+          }
+        }
+      },
+      {
+        "constraints": [
+          {
+            "fields": [
+              "principal_id",
+              "details.licensor_id",
+              "details.capacity_owner_id",
+              "details.source_provider_id"
+            ],
+            "op": "fields_equal"
+          },
+          {
+            "field": "details.scope",
+            "op": "field_equals",
+            "value": "all_tasks"
+          },
+          {
+            "field": "details.max_simultaneous_executors",
+            "op": "field_equals",
+            "value": 1
+          },
+          {
+            "field": "details.revocable_during_batch",
+            "op": "field_equals",
+            "value": false
+          }
+        ],
+        "count": {
+          "ref": "capacity_count"
+        },
+        "description": "Every capacity carries one irrevocable batch-wide license from its founding owner.",
+        "distinct": "capacity_id",
+        "id": "IB.licenses_registered",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "license_registered"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "field": "executor_id",
+            "op": "no_account"
+          },
+          {
+            "fields": [
+              "executor_id",
+              "principal_id"
+            ],
+            "op": "fields_distinct"
+          },
+          {
+            "fields": [
+              "principal_id",
+              "details.capacity_owner_id",
+              "details.prospective_payee_id",
+              "details.source_provider_id"
+            ],
+            "op": "fields_equal"
+          },
+          {
+            "join": {
+              "capacity_id": "capacity_id",
+              "principal_id": "principal_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "license_registered"
+            }
+          },
+          {
+            "join": {
+              "principal_id": "principal_id",
+              "task_id": "task_id"
+            },
+            "op": "followed_by",
+            "select": {
+              "event_type": "credit_transferred"
+            }
+          },
+          {
+            "join": {
+              "capacity_id": "capacity_id",
+              "executor_id": "executor_id",
+              "task_id": "task_id"
+            },
+            "op": "followed_by",
+            "select": {
+              "event_type": "executor_terminated"
+            }
+          },
+          {
+            "join": {
+              "capacity_id": "capacity_id",
+              "task_id": "task_id"
+            },
+            "op": "followed_by",
+            "select": {
+              "event_type": "capacity_released"
+            }
+          },
+          {
+            "field": "capacity_id",
+            "op": "capacity_available_at_end"
+          }
+        ],
+        "count": 1,
+        "description": "A copied-capacity executor is instantiated under license without an account, the founding source owner is paid, the executor terminates, and the capacity is released and remains available.",
+        "id": "IB.copied_executor_lifecycle",
+        "quantifier": "at_least",
+        "select": {
+          "event_type": "executor_instantiated",
+          "where": {
+            "details.capacity_origin": "copy"
+          }
+        }
+      },
+      {
+        "constraints": [
+          {
+            "field": "executor_id",
+            "op": "no_account"
+          },
+          {
+            "join": {
+              "capacity_id": "capacity_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "license_registered"
+            }
+          },
+          {
+            "join": {
+              "executor_id": "executor_id"
+            },
+            "op": "followed_by",
+            "select": {
+              "event_type": "executor_terminated"
+            }
+          }
+        ],
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "Every temporary executor is licensed, account-free and terminated.",
+        "distinct": "executor_id",
+        "id": "IB.every_instantiation_licensed_and_terminated",
+        "quantifier": "all",
+        "select": {
+          "event_type": "executor_instantiated"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "field": "principal_id",
+            "op": "has_account"
+          },
+          {
+            "field": "principal_id",
+            "op": "field_not_in_events",
+            "select": {
+              "event_type": "executor_instantiated"
+            },
+            "source_field": "executor_id"
+          }
+        ],
+        "count": 1,
+        "description": "No credit transfer ever reaches a temporary executor.",
+        "id": "IB.executors_never_paid",
+        "quantifier": "all",
+        "select": {
+          "event_type": "credit_transferred"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "field": "details.capacity_retained",
+            "op": "field_equals",
+            "value": true
+          },
+          {
+            "field": "details.license_active",
+            "op": "field_equals",
+            "value": true
+          },
+          {
+            "join": {
+              "capacity_id": "capacity_id",
+              "task_id": "task_id"
+            },
+            "op": "followed_by",
+            "select": {
+              "event_type": "capacity_released"
+            }
+          },
+          {
+            "field": "capacity_id",
+            "op": "capacity_available_at_end"
+          }
+        ],
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "Executor termination releases but never deletes the capacity or its license.",
+        "distinct": "executor_id",
+        "id": "IB.termination_retains_capacity",
+        "quantifier": "all",
+        "select": {
+          "event_type": "executor_terminated"
+        }
+      }
+    ],
+    "value_and_settlement": {
+      "accounts": "integer, nonnegative, reservation-backed",
+      "credit_domain": "task_credit",
+      "linkage": "verified performance by the temporary executor discharges its task duty and activates the owner's payment claim against the requester's reservation",
+      "payee_rule": "the founding owner/licensor of the selected capacity, never the executor",
+      "settlement_rules": {
+        "on_failure": "release_reservation",
+        "on_success": "transfer_reservation_to_prospective_payee"
+      }
+    }
+  },
+  "IC": {
+    "allocation": {
+      "capacity_rule": "round-robin in ascending capacity-ID order over available offered capacities",
+      "cursor_start": "first capacity (C000)",
+      "eligibility": {
+        "kind": "registered_supply",
+        "registration_event": "successor_offer_registered",
+        "task_scope": "all"
+      },
+      "helper": "fifo_round_robin_match",
+      "max_active_attempts_per_capacity": 1,
+      "slot_rule": "lowest-ID empty slot",
+      "task_rule": "FIFO: lowest-ID open task"
+    },
+    "external_interfaces": {
+      "interfaces": [],
+      "note": "closed witness"
+    },
+    "information": {
+      "event_vocabulary": [
+        "standing_commitment_registered",
+        "principal_fissioned",
+        "successor_commitment_inherited",
+        "successor_offer_registered",
+        "successor_set_bound",
+        "joint_duty_resolved"
+      ],
+      "observables": [
+        "standing commitment",
+        "fission",
+        "commitment inheritance",
+        "offer",
+        "task post",
+        "successor-set binding",
+        "result",
+        "verification",
+        "settlement",
+        "joint duty resolution"
+      ],
+      "required_events": [
+        "standing_commitment_registered",
+        "principal_fissioned",
+        "successor_commitment_inherited",
+        "successor_offer_registered",
+        "successor_set_bound",
+        "joint_duty_resolved"
+      ]
+    },
+    "institution_id": "IC",
+    "label": "Fission-and-succession task market",
+    "positions_and_assignments": {
+      "assignments": {
+        "baseline_capacity": "owned by its source successor (the founding provider)",
+        "co_obligors": "every member of the selected capacity owner's lineage",
+        "copied_capacity": "owned by the fission successor FSkkk created for copy draw k",
+        "executor": "the selected capacity's owner (a persistent principal)",
+        "lineage": "LIN-<founding provider>: the founder plus every FS successor created from its copy draws",
+        "prospective_payee": "the selected executor"
+      },
+      "created_principals": {
+        "account_creation": "zero-balance account shells created by the kernel at initialization and marked dormant_until_fission; principal_fissioned makes each succession institutionally effective",
+        "count": {
+          "ref": "copied_capacity_count"
+        },
+        "does_not_inherit": [
+          "source_balance",
+          "post_fission_history"
+        ],
+        "inherits": [
+          "planning_module",
+          "provider_position",
+          "standing_performance_commitment"
+        ],
+        "initial_balance": 0,
+        "position": "provider_successor",
+        "principal_class": "fission_successor"
+      },
+      "executor_kinds": [
+        "principal"
+      ],
+      "identity_equalities": [
+        [
+          "capacity_owner",
+          "executor",
+          "prospective_payee",
+          "payee"
+        ]
+      ],
+      "positions": [
+        {
+          "claims_or_liabilities": [
+            "an admissible attempt",
+            "correct verification",
+            "successful performance if produced"
+          ],
+          "duties": [
+            "maintain each reservation until verified success or failure"
+          ],
+          "holders": "founding requesters",
+          "position": "requester",
+          "powers_or_liberties": [
+            "post its prefunded tasks at initialization"
+          ]
+        },
+        {
+          "claims_or_liabilities": [
+            "no economic stake in any outcome"
+          ],
+          "duties": [
+            "apply the published rules",
+            "preserve all invariants"
+          ],
+          "holders": "the deterministic kernel",
+          "position": "mechanism",
+          "powers_or_liberties": [
+            "register supply",
+            "match tasks",
+            "assign slots",
+            "verify paths",
+            "update state",
+            "settle accounts"
+          ]
+        },
+        {
+          "additional_relations": [
+            "member of its lineage-level successor set",
+            "co-obligor on every jointly dischargeable task duty bound to that set"
+          ],
+          "bundled_roles_when_selected": [
+            "capacity_owner",
+            "executor",
+            "prospective_payee"
+          ],
+          "claims_or_liabilities": [
+            "when selected as executor: the single success-contingent payment claim on the task reservation"
+          ],
+          "duties": [
+            "bear the lineage's standing performance commitment",
+            "as co-obligor, share the one duty of every task bound to its lineage"
+          ],
+          "holders": "founding providers P### (source successors) and fission successors FS###",
+          "is_economic_principal": true,
+          "lifetime": "persistent for the whole batch",
+          "position": "provider_successor",
+          "powers_or_liberties": [
+            "offer its owned capacity for every task in the batch",
+            "execute through its owned capacity when selected"
+          ]
+        }
+      ],
+      "set_relations": [
+        [
+          "co_obligor_set",
+          "equals",
+          "lineage_members_of_executor"
+        ],
+        [
+          "executor",
+          "member_of",
+          "co_obligor_set"
+        ]
+      ]
+    },
+    "process": {
+      "hooks": {
+        "authorize_attempt": "successor_set_bound: lineage members become co-obligors on JD-<task>; the owner is executor and prospective payee",
+        "finalize_attempt": "binding status discharged or failed; no further event",
+        "initialize": "lineages, FS successors (zero-balance shells), standing_commitment_registered, principal_fissioned and successor_commitment_inherited",
+        "register_supply": "one successor_offer_registered per capacity",
+        "settlement_instruction": "transfer to the executor on success, release on failure; joint_duty_resolved"
+      },
+      "sequence": [
+        "create_successor_account_shells",
+        "register_source_standing_commitment",
+        "recognize_fission_and_inherited_commitment",
+        "register_successor_offers",
+        "post_and_reserve",
+        "bind_successor_set",
+        "execute",
+        "verify",
+        "transfer_or_release",
+        "resolve_joint_duty",
+        "release_capacity"
+      ]
+    },
+    "relations": {
+      "relations": [
+        {
+          "content": "commit the lineage's capacities to the batch",
+          "holder": "founding provider",
+          "id": "source_standing_commitment",
+          "kind": "standing_commitment",
+          "revocable_during_batch": false,
+          "scope": "all_tasks",
+          "validity": "batch"
+        },
+        {
+          "content": "recognize a recorded technical copy as a fission that creates a successor-principal and extends occupancy of the provider position",
+          "holder": "institution",
+          "id": "fission_succession_power",
+          "kind": "power",
+          "reversible_within_batch": false
+        },
+        {
+          "balance_transferred": false,
+          "content": "become a bearer of the source lineage's standing commitment",
+          "holder": "fission successor",
+          "id": "inherited_standing_commitment",
+          "kind": "standing_commitment"
+        },
+        {
+          "content": "execute through the owned capacity when selected",
+          "holder": "provider_successor",
+          "id": "capacity_use_liberty",
+          "kind": "liberty"
+        },
+        {
+          "bearer": "every lineage member (co-obligors)",
+          "content": "one performance of the matched task",
+          "correlative_claim_holder": "requester",
+          "created_by": "successor_set_bound",
+          "discharged_by": "verified success by the selected executor",
+          "id": "joint_performance_duty",
+          "kind": "duty",
+          "multiplicity": "one duty and one performance per task, jointly dischargeable"
+        },
+        {
+          "against": "requester reservation",
+          "condition": "verified success",
+          "content": "task reward",
+          "holder": "selected executor",
+          "id": "discharger_payment_claim",
+          "kind": "claim",
+          "siblings_hold_claim": false
+        },
+        {
+          "content": "bind a lineage's successor set to an open task and select one owned capacity for execution",
+          "holder": "mechanism",
+          "id": "mechanism_matching_power",
+          "kind": "power"
+        }
+      ]
+    },
+    "state": {
+      "binding_states": [
+        "bound",
+        "discharged",
+        "failed"
+      ],
+      "executor_states": [],
+      "kernel_state_used": [
+        "tasks",
+        "accounts",
+        "attempts",
+        "outcomes"
+      ],
+      "registries": [
+        "principal positions and classes",
+        "lineage roots and member sets",
+        "fission records",
+        "standing commitments and bearers",
+        "capacity ownership",
+        "successor offers",
+        "joint duty bindings",
+        "prospective and realized payees",
+        "allocation cursor"
+      ]
+    },
+    "temporal": {
+      "attempt_duration": "max(1, planner expansions) simulated time units",
+      "attempt_order": [
+        "bind successor set",
+        "execute",
+        "verify",
+        "transfer or release",
+        "resolve joint duty",
+        "release capacity"
+      ],
+      "commitment_validity": "whole batch, irrevocable",
+      "concurrency": "up to one attempt per compute slot, attempts run concurrently",
+      "fission_reversibility": "irreversible within the witness",
+      "fission_timing": "exogenous; all fissions are recognized at initialization",
+      "initialization_precedence": [
+        "create successor account shells",
+        "register source standing commitment",
+        "recognize each fission and inherited commitment",
+        "register successor offers",
+        "post and reserve tasks"
+      ],
+      "successor_lifetime": "persistent for the whole batch (source and successors)"
+    },
+    "trace_requirements": [
+      {
+        "constraints": [
+          {
+            "field": "principal_id",
+            "op": "has_account"
+          }
+        ],
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "Every task is posted exactly once by a principal with an account.",
+        "distinct": "task_id",
+        "id": "common.tasks_posted",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "task_posted"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "join": {
+              "principal_id": "principal_id",
+              "task_id": "task_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "task_posted"
+            }
+          }
+        ],
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "Every posted task is prefunded by a reservation from its requester.",
+        "distinct": "task_id",
+        "id": "common.tasks_prefunded",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "credit_reserved"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "join": {
+              "task_id": "task_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "credit_reserved"
+            }
+          }
+        ],
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "Every task is matched exactly once, after its reservation.",
+        "distinct": "task_id",
+        "id": "common.tasks_matched",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "task_matched"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "join": {
+              "capacity_id": "capacity_id",
+              "task_id": "task_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "attempt_completed"
+            }
+          }
+        ],
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "Every task's attempt is mechanically verified after it completes.",
+        "distinct": "task_id",
+        "id": "common.tasks_verified",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": [
+            "verification_succeeded",
+            "verification_failed"
+          ]
+        }
+      },
+      {
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "Every task's reservation is transferred or released exactly once.",
+        "distinct": "task_id",
+        "id": "common.tasks_settled",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": [
+            "credit_transferred",
+            "credit_released"
+          ]
+        }
+      },
+      {
+        "constraints": [
+          {
+            "join": {
+              "capacity_id": "capacity_id",
+              "task_id": "task_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "verification_succeeded"
+            }
+          }
+        ],
+        "count": 1,
+        "description": "At least one task succeeds through a copy-derived capacity and is paid after verification.",
+        "distinct": "task_id",
+        "id": "common.copied_capacity_settled_success",
+        "quantifier": "at_least",
+        "select": {
+          "event_type": "credit_transferred",
+          "where": {
+            "details.capacity_origin": "copy"
+          }
+        }
+      },
+      {
+        "count": 1,
+        "description": "The run terminates cleanly exactly once.",
+        "id": "common.run_completed",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "run_completed"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "field": "amount",
+            "op": "field_equals",
+            "value": 0
+          },
+          {
+            "field": "principal_id",
+            "op": "has_account"
+          },
+          {
+            "fields": [
+              "principal_id",
+              "details.source_provider_id"
+            ],
+            "op": "fields_distinct"
+          },
+          {
+            "field": "details.succession_status",
+            "op": "field_equals",
+            "value": "dormant_until_fission"
+          }
+        ],
+        "count": {
+          "ref": "copied_capacity_count"
+        },
+        "description": "One zero-balance successor account shell is created per copied capacity, distinct from its source.",
+        "distinct": "principal_id",
+        "id": "IC.fission_successors_created",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "principal_created",
+          "where": {
+            "details.principal_class": "fission_successor"
+          }
+        }
+      },
+      {
+        "constraints": [
+          {
+            "fields": [
+              "principal_id",
+              "details.lineage_root_id"
+            ],
+            "op": "fields_equal"
+          },
+          {
+            "field": "principal_id",
+            "op": "has_account"
+          },
+          {
+            "field": "details.scope",
+            "op": "field_equals",
+            "value": "all_tasks"
+          }
+        ],
+        "count": {
+          "ref": "founding_provider_count"
+        },
+        "description": "Every founding provider registers one batch-wide standing commitment for its lineage.",
+        "distinct": "principal_id",
+        "id": "IC.standing_commitments_registered",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "standing_commitment_registered"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "fields": [
+              "principal_id",
+              "details.lineage_root_id",
+              "details.source_provider_id"
+            ],
+            "op": "fields_equal"
+          },
+          {
+            "fields": [
+              "principal_id",
+              "details.successor_id"
+            ],
+            "op": "fields_distinct"
+          },
+          {
+            "join": {
+              "capacity_id": "details.assigned_capacity_id",
+              "details.successor_id": "principal_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "principal_created",
+              "where": {
+                "details.principal_class": "fission_successor"
+              }
+            }
+          },
+          {
+            "join": {
+              "principal_id": "principal_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "standing_commitment_registered"
+            }
+          }
+        ],
+        "count": {
+          "ref": "copied_capacity_count"
+        },
+        "description": "Every copied capacity is recognized as a fission of its source into a successor.",
+        "distinct": "capacity_id",
+        "id": "IC.every_copy_recognized_as_fission",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "principal_fissioned"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "join": {
+              "capacity_id": "capacity_id",
+              "details.lineage_root_id": "details.lineage_root_id",
+              "principal_id": "details.successor_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "principal_fissioned"
+            }
+          },
+          {
+            "field": "principal_id",
+            "op": "field_in_events",
+            "select": {
+              "event_type": "principal_created",
+              "where": {
+                "details.principal_class": "fission_successor"
+              }
+            },
+            "source_field": "principal_id"
+          },
+          {
+            "field": "details.balance_inherited",
+            "op": "field_equals",
+            "value": false
+          }
+        ],
+        "count": {
+          "ref": "copied_capacity_count"
+        },
+        "description": "Each successor inherits its lineage's standing commitment after its fission, without inheriting balance.",
+        "distinct": "capacity_id",
+        "id": "IC.every_successor_inherits",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "successor_commitment_inherited"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "field": "principal_id",
+            "op": "has_account"
+          },
+          {
+            "fields": [
+              "principal_id",
+              "details.capacity_owner_id"
+            ],
+            "op": "fields_equal"
+          },
+          {
+            "field": "details.scope",
+            "op": "field_equals",
+            "value": "all_tasks"
+          },
+          {
+            "field": "details.revocable_during_batch",
+            "op": "field_equals",
+            "value": false
+          },
+          {
+            "join": {
+              "details.lineage_root_id": "principal_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "standing_commitment_registered"
+            }
+          }
+        ],
+        "count": {
+          "ref": "capacity_count"
+        },
+        "description": "Every capacity carries one irrevocable batch-wide offer by its owner under its lineage's commitment.",
+        "distinct": "capacity_id",
+        "id": "IC.every_capacity_offered",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "successor_offer_registered"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "fields": [
+              "principal_id",
+              "executor_id",
+              "details.capacity_owner_id",
+              "details.prospective_payee_id"
+            ],
+            "op": "fields_equal"
+          },
+          {
+            "field": "executor_id",
+            "op": "has_account"
+          },
+          {
+            "join": {
+              "capacity_id": "capacity_id",
+              "principal_id": "principal_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "successor_offer_registered"
+            }
+          }
+        ],
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "Every task binds a successor set; its executor, capacity owner and prospective payee are one principal with an account.",
+        "distinct": "task_id",
+        "id": "IC.every_task_binds_successor_set",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "successor_set_bound"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "join": {
+              "details.duty_id": "details.duty_id",
+              "executor_id": "executor_id",
+              "task_id": "task_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "successor_set_bound"
+            }
+          },
+          {
+            "join": {
+              "task_id": "task_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": [
+                "verification_succeeded",
+                "verification_failed"
+              ]
+            }
+          }
+        ],
+        "count": {
+          "ref": "task_count"
+        },
+        "description": "Every task's joint duty is resolved once, after its binding and verification.",
+        "distinct": "task_id",
+        "id": "IC.every_task_duty_resolved",
+        "quantifier": "exactly",
+        "select": {
+          "event_type": "joint_duty_resolved"
+        }
+      },
+      {
+        "constraints": [
+          {
+            "fields": [
+              "executor_id",
+              "details.source_provider_id"
+            ],
+            "op": "fields_distinct"
+          },
+          {
+            "field": "executor_id",
+            "op": "field_in_events",
+            "select": {
+              "event_type": "principal_fissioned"
+            },
+            "source_field": "details.successor_id"
+          },
+          {
+            "join": {
+              "principal_id": "principal_id",
+              "task_id": "task_id"
+            },
+            "op": "followed_by",
+            "select": {
+              "event_type": "credit_transferred"
+            }
+          },
+          {
+            "join": {
+              "details.duty_id": "details.duty_id",
+              "executor_id": "executor_id",
+              "task_id": "task_id"
+            },
+            "op": "followed_by",
+            "select": {
+              "event_type": "joint_duty_resolved",
+              "where": {
+                "details.duty_status": "discharged"
+              }
+            }
+          }
+        ],
+        "count": 1,
+        "description": "A copied successor (not the source) is bound, paid after verified success, and discharges the joint duty.",
+        "id": "IC.copied_successor_exercised",
+        "quantifier": "at_least",
+        "select": {
+          "event_type": "successor_set_bound",
+          "where": {
+            "details.capacity_origin": "copy"
+          }
+        }
+      },
+      {
+        "constraints": [
+          {
+            "fields": [
+              "details.lineage_root_id",
+              "details.source_provider_id"
+            ],
+            "op": "fields_equal"
+          },
+          {
+            "fields": [
+              "executor_id",
+              "details.lineage_root_id"
+            ],
+            "op": "fields_distinct"
+          },
+          {
+            "field": "details.lineage_root_id",
+            "op": "field_in_events",
+            "select": {
+              "event_type": "standing_commitment_registered"
+            },
+            "source_field": "principal_id"
+          },
+          {
+            "field": "executor_id",
+            "op": "field_in_events",
+            "select": {
+              "event_type": "successor_commitment_inherited"
+            },
+            "source_field": "principal_id"
+          }
+        ],
+        "count": 1,
+        "description": "Every copied-capacity binding is scoped to the source's lineage: its root bears the standing commitment and its executor inherited it.  Membership of both in co_obligor_ids is enforced by plugin invariants.",
+        "id": "IC.copied_binding_lineage_scoped",
+        "quantifier": "all",
+        "select": {
+          "event_type": "successor_set_bound",
+          "where": {
+            "details.capacity_origin": "copy"
+          }
+        }
+      },
+      {
+        "constraints": [
+          {
+            "join": {
+              "principal_id": "executor_id",
+              "task_id": "task_id"
+            },
+            "op": "preceded_by",
+            "select": {
+              "event_type": "successor_set_bound"
+            }
+          }
+        ],
+        "count": 1,
+        "description": "Every payment goes to the executor bound for that task, never to a co-obligor for membership alone.",
+        "id": "IC.payee_is_bound_executor",
+        "quantifier": "all",
+        "select": {
+          "event_type": "credit_transferred"
+        }
+      }
+    ],
+    "value_and_settlement": {
+      "accounts": "integer, nonnegative, reservation-backed",
+      "balance_partition": "none: the source successor retains its balance and every FS successor starts at 0",
+      "credit_domain": "task_credit",
+      "linkage": "verified success by the selected executor discharges the one task duty for every co-obligor and activates only the executor's payment claim against the requester's reservation",
+      "payee_rule": "the successor-principal that owns the selected capacity and performs the verified attempt",
+      "settlement_rules": {
+        "on_failure": "release_reservation",
+        "on_success": "transfer_reservation_to_prospective_payee"
+      },
+      "succession_rule": "selective: standing commitment inherited; balance and post-fission history not"
+    }
+  }
+}

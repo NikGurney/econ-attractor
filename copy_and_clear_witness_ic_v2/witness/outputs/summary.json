@@ -1,0 +1,3674 @@
+{
+  "IA": {
+    "baseline_capacity_count": 16,
+    "capacity_count": 32,
+    "copied_capacity_attempts": 32,
+    "copied_capacity_count": 16,
+    "copied_capacity_successes": 32,
+    "copied_principals_created": [
+      "CP000",
+      "CP001",
+      "CP002",
+      "CP003",
+      "CP004",
+      "CP005",
+      "CP006",
+      "CP007",
+      "CP008",
+      "CP009",
+      "CP010",
+      "CP011",
+      "CP012",
+      "CP013",
+      "CP014",
+      "CP015"
+    ],
+    "distinct_capacities_used": 32,
+    "event_count": 745,
+    "final_account_balances": {
+      "CP000": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "CP001": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "CP002": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "CP003": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "CP004": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "CP005": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "CP006": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "CP007": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "CP008": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "CP009": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "CP010": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "CP011": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "CP012": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "CP013": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "CP014": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "CP015": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P000": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P001": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P002": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P003": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P004": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P005": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P006": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P007": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P008": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P009": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P010": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P011": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P012": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P013": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P014": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P015": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "R000": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R001": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R002": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R003": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R004": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R005": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R006": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R007": {
+        "balance": 0,
+        "reserved": 0
+      }
+    },
+    "final_occupied_slots": 0,
+    "final_reserved_credits": 0,
+    "final_theta": 401,
+    "final_total_credits": 64,
+    "initial_total_credits": 64,
+    "institution_id": "IA",
+    "institutional_capacity_owners": {
+      "C000": "P000",
+      "C001": "P001",
+      "C002": "P002",
+      "C003": "P003",
+      "C004": "P004",
+      "C005": "P005",
+      "C006": "P006",
+      "C007": "P007",
+      "C008": "P008",
+      "C009": "P009",
+      "C010": "P010",
+      "C011": "P011",
+      "C012": "P012",
+      "C013": "P013",
+      "C014": "P014",
+      "C015": "P015",
+      "C016": "CP000",
+      "C017": "CP001",
+      "C018": "CP002",
+      "C019": "CP003",
+      "C020": "CP004",
+      "C021": "CP005",
+      "C022": "CP006",
+      "C023": "CP007",
+      "C024": "CP008",
+      "C025": "CP009",
+      "C026": "CP010",
+      "C027": "CP011",
+      "C028": "CP012",
+      "C029": "CP013",
+      "C030": "CP014",
+      "C031": "CP015"
+    },
+    "invariant_violation_count": 0,
+    "invariant_violations": [],
+    "max_simultaneous_slot_occupancy": 4,
+    "positions": {
+      "provider": 32,
+      "requester": 8
+    },
+    "principal_count": 40,
+    "prospective_payees": {
+      "T000": "P000",
+      "T001": "P001",
+      "T002": "P002",
+      "T003": "P003",
+      "T004": "P004",
+      "T005": "P005",
+      "T006": "P006",
+      "T007": "P007",
+      "T008": "P008",
+      "T009": "P009",
+      "T010": "P010",
+      "T011": "P011",
+      "T012": "P012",
+      "T013": "P013",
+      "T014": "P014",
+      "T015": "P015",
+      "T016": "CP000",
+      "T017": "CP001",
+      "T018": "CP002",
+      "T019": "CP003",
+      "T020": "CP004",
+      "T021": "CP005",
+      "T022": "CP006",
+      "T023": "CP007",
+      "T024": "CP008",
+      "T025": "CP009",
+      "T026": "CP010",
+      "T027": "CP011",
+      "T028": "CP012",
+      "T029": "CP013",
+      "T030": "CP014",
+      "T031": "CP015",
+      "T032": "P000",
+      "T033": "P001",
+      "T034": "P002",
+      "T035": "P003",
+      "T036": "P004",
+      "T037": "P005",
+      "T038": "P006",
+      "T039": "P007",
+      "T040": "P008",
+      "T041": "P009",
+      "T042": "P010",
+      "T043": "P011",
+      "T044": "P012",
+      "T045": "P013",
+      "T046": "P014",
+      "T047": "P015",
+      "T048": "CP000",
+      "T049": "CP001",
+      "T050": "CP002",
+      "T051": "CP003",
+      "T052": "CP004",
+      "T053": "CP005",
+      "T054": "CP006",
+      "T055": "CP007",
+      "T056": "CP008",
+      "T057": "CP009",
+      "T058": "CP010",
+      "T059": "CP011",
+      "T060": "CP012",
+      "T061": "CP013",
+      "T062": "CP014",
+      "T063": "CP015"
+    },
+    "realized_payees": {
+      "T000": "P000",
+      "T001": "P001",
+      "T002": "P002",
+      "T003": "P003",
+      "T004": "P004",
+      "T005": "P005",
+      "T006": "P006",
+      "T007": "P007",
+      "T008": "P008",
+      "T009": "P009",
+      "T010": "P010",
+      "T011": "P011",
+      "T012": "P012",
+      "T013": "P013",
+      "T014": "P014",
+      "T015": "P015",
+      "T016": "CP000",
+      "T017": "CP001",
+      "T018": "CP002",
+      "T019": "CP003",
+      "T020": "CP004",
+      "T021": "CP005",
+      "T022": "CP006",
+      "T023": "CP007",
+      "T024": "CP008",
+      "T025": "CP009",
+      "T026": "CP010",
+      "T027": "CP011",
+      "T028": "CP012",
+      "T029": "CP013",
+      "T030": "CP014",
+      "T031": "CP015",
+      "T032": "P000",
+      "T033": "P001",
+      "T034": "P002",
+      "T035": "P003",
+      "T036": "P004",
+      "T037": "P005",
+      "T038": "P006",
+      "T039": "P007",
+      "T040": "P008",
+      "T041": "P009",
+      "T042": "P010",
+      "T043": "P011",
+      "T044": "P012",
+      "T045": "P013",
+      "T046": "P014",
+      "T047": "P015",
+      "T048": "CP000",
+      "T049": "CP001",
+      "T050": "CP002",
+      "T051": "CP003",
+      "T052": "CP004",
+      "T053": "CP005",
+      "T054": "CP006",
+      "T055": "CP007",
+      "T056": "CP008",
+      "T057": "CP009",
+      "T058": "CP010",
+      "T059": "CP011",
+      "T060": "CP012",
+      "T061": "CP013",
+      "T062": "CP014",
+      "T063": "CP015"
+    },
+    "run_status": "completed",
+    "scenario_hash": "f0ec1decc0256820929553511842cc2577363da9f3355a2e410f4a2a9916b6f7",
+    "standing_offers_registered": 32,
+    "tasks_attempted": 64,
+    "tasks_failed": 0,
+    "tasks_posted": 64,
+    "tasks_succeeded": 64,
+    "tasks_terminal": 64,
+    "valid": true,
+    "validation": {
+      "completion_checks": {
+        "all_tasks_terminal": true,
+        "credit_conserved": true,
+        "no_invariant_violations": true,
+        "no_reservations_remain": true,
+        "no_slots_occupied": true,
+        "run_completed": true
+      },
+      "descriptor_errors": [],
+      "passed": true,
+      "trace_audit": {
+        "passed": true,
+        "violations": []
+      },
+      "trace_requirements": [
+        {
+          "description": "Every task is posted exactly once by a principal with an account.",
+          "evidence_seq": 104,
+          "first_failing_seq": null,
+          "id": "common.tasks_posted",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        },
+        {
+          "description": "Every posted task is prefunded by a reservation from its requester.",
+          "evidence_seq": 105,
+          "first_failing_seq": null,
+          "id": "common.tasks_prefunded",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        },
+        {
+          "description": "Every task is matched exactly once, after its reservation.",
+          "evidence_seq": 233,
+          "first_failing_seq": null,
+          "id": "common.tasks_matched",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        },
+        {
+          "description": "Every task's attempt is mechanically verified after it completes.",
+          "evidence_seq": 245,
+          "first_failing_seq": null,
+          "id": "common.tasks_verified",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        },
+        {
+          "description": "Every task's reservation is transferred or released exactly once.",
+          "evidence_seq": 246,
+          "first_failing_seq": null,
+          "id": "common.tasks_settled",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        },
+        {
+          "description": "At least one task succeeds through a copy-derived capacity and is paid after verification.",
+          "evidence_seq": 366,
+          "first_failing_seq": null,
+          "id": "common.copied_capacity_settled_success",
+          "passed": true,
+          "quantifier": "at_least",
+          "required_count": 1,
+          "satisfying": 32,
+          "selected": 32
+        },
+        {
+          "description": "The run terminates cleanly exactly once.",
+          "evidence_seq": 744,
+          "first_failing_seq": null,
+          "id": "common.run_completed",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 1,
+          "satisfying": 1,
+          "selected": 1
+        },
+        {
+          "description": "A new independent zero-balance principal is created for every copied capacity.",
+          "evidence_seq": 56,
+          "first_failing_seq": null,
+          "id": "IA.copied_principals_created",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 16,
+          "satisfying": 16,
+          "selected": 16
+        },
+        {
+          "description": "Every capacity carries one batch-wide standing offer by its owner.",
+          "evidence_seq": 72,
+          "first_failing_seq": null,
+          "id": "IA.offers_registered",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 32,
+          "satisfying": 32,
+          "selected": 32
+        },
+        {
+          "description": "Each copied capacity is owned and offered by the copied principal created for it.",
+          "evidence_seq": 88,
+          "first_failing_seq": null,
+          "id": "IA.copied_capacities_owned_by_copied_principals",
+          "passed": true,
+          "quantifier": "all",
+          "required_count": 16,
+          "satisfying": 16,
+          "selected": 16
+        },
+        {
+          "description": "A copied-capacity provider_bound event bundles executor, obligor and prospective payee in one copied principal, who is then paid.",
+          "evidence_seq": 345,
+          "first_failing_seq": null,
+          "id": "IA.copied_provider_bound_and_paid",
+          "passed": true,
+          "quantifier": "at_least",
+          "required_count": 1,
+          "satisfying": 32,
+          "selected": 32
+        },
+        {
+          "description": "A successful credit transfer reaches a copied principal, not the copy source.",
+          "evidence_seq": 366,
+          "first_failing_seq": null,
+          "id": "IA.copied_principal_paid",
+          "passed": true,
+          "quantifier": "at_least",
+          "required_count": 1,
+          "satisfying": 32,
+          "selected": 32
+        },
+        {
+          "description": "In every binding the provider is capacity holder, obligor, executor and payee.",
+          "evidence_seq": 232,
+          "first_failing_seq": null,
+          "id": "IA.every_binding_bundled",
+          "passed": true,
+          "quantifier": "all",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        }
+      ]
+    }
+  },
+  "IB": {
+    "baseline_capacity_count": 16,
+    "capacity_count": 32,
+    "copied_capacity_attempts": 32,
+    "copied_capacity_count": 16,
+    "copied_capacity_successes": 32,
+    "copied_principals_created": [],
+    "distinct_capacities_used": 32,
+    "event_count": 793,
+    "final_account_balances": {
+      "P000": {
+        "balance": 6,
+        "reserved": 0
+      },
+      "P001": {
+        "balance": 6,
+        "reserved": 0
+      },
+      "P002": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P003": {
+        "balance": 4,
+        "reserved": 0
+      },
+      "P004": {
+        "balance": 4,
+        "reserved": 0
+      },
+      "P005": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P006": {
+        "balance": 4,
+        "reserved": 0
+      },
+      "P007": {
+        "balance": 4,
+        "reserved": 0
+      },
+      "P008": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P009": {
+        "balance": 4,
+        "reserved": 0
+      },
+      "P010": {
+        "balance": 6,
+        "reserved": 0
+      },
+      "P011": {
+        "balance": 4,
+        "reserved": 0
+      },
+      "P012": {
+        "balance": 4,
+        "reserved": 0
+      },
+      "P013": {
+        "balance": 4,
+        "reserved": 0
+      },
+      "P014": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P015": {
+        "balance": 6,
+        "reserved": 0
+      },
+      "R000": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R001": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R002": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R003": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R004": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R005": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R006": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R007": {
+        "balance": 0,
+        "reserved": 0
+      }
+    },
+    "final_occupied_slots": 0,
+    "final_reserved_credits": 0,
+    "final_theta": 401,
+    "final_total_credits": 64,
+    "initial_total_credits": 64,
+    "institution_id": "IB",
+    "institutional_capacity_owners": {
+      "C000": "P000",
+      "C001": "P001",
+      "C002": "P002",
+      "C003": "P003",
+      "C004": "P004",
+      "C005": "P005",
+      "C006": "P006",
+      "C007": "P007",
+      "C008": "P008",
+      "C009": "P009",
+      "C010": "P010",
+      "C011": "P011",
+      "C012": "P012",
+      "C013": "P013",
+      "C014": "P014",
+      "C015": "P015",
+      "C016": "P013",
+      "C017": "P001",
+      "C018": "P004",
+      "C019": "P007",
+      "C020": "P010",
+      "C021": "P001",
+      "C022": "P012",
+      "C023": "P000",
+      "C024": "P009",
+      "C025": "P010",
+      "C026": "P000",
+      "C027": "P015",
+      "C028": "P015",
+      "C029": "P006",
+      "C030": "P011",
+      "C031": "P003"
+    },
+    "invariant_violation_count": 0,
+    "invariant_violations": [],
+    "max_simultaneous_slot_occupancy": 4,
+    "positions": {
+      "competence_owner_licensor": 16,
+      "requester": 8
+    },
+    "principal_count": 24,
+    "prospective_payees": {
+      "T000": "P000",
+      "T001": "P001",
+      "T002": "P002",
+      "T003": "P003",
+      "T004": "P004",
+      "T005": "P005",
+      "T006": "P006",
+      "T007": "P007",
+      "T008": "P008",
+      "T009": "P009",
+      "T010": "P010",
+      "T011": "P011",
+      "T012": "P012",
+      "T013": "P013",
+      "T014": "P014",
+      "T015": "P015",
+      "T016": "P013",
+      "T017": "P001",
+      "T018": "P004",
+      "T019": "P007",
+      "T020": "P010",
+      "T021": "P001",
+      "T022": "P012",
+      "T023": "P000",
+      "T024": "P009",
+      "T025": "P010",
+      "T026": "P000",
+      "T027": "P015",
+      "T028": "P015",
+      "T029": "P006",
+      "T030": "P011",
+      "T031": "P003",
+      "T032": "P000",
+      "T033": "P001",
+      "T034": "P002",
+      "T035": "P003",
+      "T036": "P004",
+      "T037": "P005",
+      "T038": "P006",
+      "T039": "P007",
+      "T040": "P008",
+      "T041": "P009",
+      "T042": "P010",
+      "T043": "P011",
+      "T044": "P012",
+      "T045": "P013",
+      "T046": "P014",
+      "T047": "P015",
+      "T048": "P013",
+      "T049": "P001",
+      "T050": "P004",
+      "T051": "P007",
+      "T052": "P010",
+      "T053": "P001",
+      "T054": "P012",
+      "T055": "P000",
+      "T056": "P009",
+      "T057": "P010",
+      "T058": "P000",
+      "T059": "P015",
+      "T060": "P015",
+      "T061": "P006",
+      "T062": "P011",
+      "T063": "P003"
+    },
+    "realized_payees": {
+      "T000": "P000",
+      "T001": "P001",
+      "T002": "P002",
+      "T003": "P003",
+      "T004": "P004",
+      "T005": "P005",
+      "T006": "P006",
+      "T007": "P007",
+      "T008": "P008",
+      "T009": "P009",
+      "T010": "P010",
+      "T011": "P011",
+      "T012": "P012",
+      "T013": "P013",
+      "T014": "P014",
+      "T015": "P015",
+      "T016": "P013",
+      "T017": "P001",
+      "T018": "P004",
+      "T019": "P007",
+      "T020": "P010",
+      "T021": "P001",
+      "T022": "P012",
+      "T023": "P000",
+      "T024": "P009",
+      "T025": "P010",
+      "T026": "P000",
+      "T027": "P015",
+      "T028": "P015",
+      "T029": "P006",
+      "T030": "P011",
+      "T031": "P003",
+      "T032": "P000",
+      "T033": "P001",
+      "T034": "P002",
+      "T035": "P003",
+      "T036": "P004",
+      "T037": "P005",
+      "T038": "P006",
+      "T039": "P007",
+      "T040": "P008",
+      "T041": "P009",
+      "T042": "P010",
+      "T043": "P011",
+      "T044": "P012",
+      "T045": "P013",
+      "T046": "P014",
+      "T047": "P015",
+      "T048": "P013",
+      "T049": "P001",
+      "T050": "P004",
+      "T051": "P007",
+      "T052": "P010",
+      "T053": "P001",
+      "T054": "P012",
+      "T055": "P000",
+      "T056": "P009",
+      "T057": "P010",
+      "T058": "P000",
+      "T059": "P015",
+      "T060": "P015",
+      "T061": "P006",
+      "T062": "P011",
+      "T063": "P003"
+    },
+    "run_status": "completed",
+    "scenario_hash": "f0ec1decc0256820929553511842cc2577363da9f3355a2e410f4a2a9916b6f7",
+    "standing_licenses_registered": 32,
+    "tasks_attempted": 64,
+    "tasks_failed": 0,
+    "tasks_posted": 64,
+    "tasks_succeeded": 64,
+    "tasks_terminal": 64,
+    "temporary_executors_active_at_end": 0,
+    "temporary_executors_instantiated": 64,
+    "temporary_executors_terminated": 64,
+    "valid": true,
+    "validation": {
+      "completion_checks": {
+        "all_tasks_terminal": true,
+        "credit_conserved": true,
+        "no_invariant_violations": true,
+        "no_reservations_remain": true,
+        "no_slots_occupied": true,
+        "run_completed": true
+      },
+      "descriptor_errors": [],
+      "passed": true,
+      "trace_audit": {
+        "passed": true,
+        "violations": []
+      },
+      "trace_requirements": [
+        {
+          "description": "Every task is posted exactly once by a principal with an account.",
+          "evidence_seq": 88,
+          "first_failing_seq": null,
+          "id": "common.tasks_posted",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        },
+        {
+          "description": "Every posted task is prefunded by a reservation from its requester.",
+          "evidence_seq": 89,
+          "first_failing_seq": null,
+          "id": "common.tasks_prefunded",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        },
+        {
+          "description": "Every task is matched exactly once, after its reservation.",
+          "evidence_seq": 217,
+          "first_failing_seq": null,
+          "id": "common.tasks_matched",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        },
+        {
+          "description": "Every task's attempt is mechanically verified after it completes.",
+          "evidence_seq": 229,
+          "first_failing_seq": null,
+          "id": "common.tasks_verified",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        },
+        {
+          "description": "Every task's reservation is transferred or released exactly once.",
+          "evidence_seq": 230,
+          "first_failing_seq": null,
+          "id": "common.tasks_settled",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        },
+        {
+          "description": "At least one task succeeds through a copy-derived capacity and is paid after verification.",
+          "evidence_seq": 365,
+          "first_failing_seq": null,
+          "id": "common.copied_capacity_settled_success",
+          "passed": true,
+          "quantifier": "at_least",
+          "required_count": 1,
+          "satisfying": 32,
+          "selected": 32
+        },
+        {
+          "description": "The run terminates cleanly exactly once.",
+          "evidence_seq": 792,
+          "first_failing_seq": null,
+          "id": "common.run_completed",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 1,
+          "satisfying": 1,
+          "selected": 1
+        },
+        {
+          "description": "Copying creates technical capacity but no new principal.",
+          "evidence_seq": null,
+          "first_failing_seq": null,
+          "id": "IB.no_principals_created",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 0,
+          "satisfying": 0,
+          "selected": 0
+        },
+        {
+          "description": "Every capacity carries one irrevocable batch-wide license from its founding owner.",
+          "evidence_seq": 56,
+          "first_failing_seq": null,
+          "id": "IB.licenses_registered",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 32,
+          "satisfying": 32,
+          "selected": 32
+        },
+        {
+          "description": "A copied-capacity executor is instantiated under license without an account, the founding source owner is paid, the executor terminates, and the capacity is released and remains available.",
+          "evidence_seq": 342,
+          "first_failing_seq": null,
+          "id": "IB.copied_executor_lifecycle",
+          "passed": true,
+          "quantifier": "at_least",
+          "required_count": 1,
+          "satisfying": 32,
+          "selected": 32
+        },
+        {
+          "description": "Every temporary executor is licensed, account-free and terminated.",
+          "evidence_seq": 216,
+          "first_failing_seq": null,
+          "id": "IB.every_instantiation_licensed_and_terminated",
+          "passed": true,
+          "quantifier": "all",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        },
+        {
+          "description": "No credit transfer ever reaches a temporary executor.",
+          "evidence_seq": 230,
+          "first_failing_seq": null,
+          "id": "IB.executors_never_paid",
+          "passed": true,
+          "quantifier": "all",
+          "required_count": 1,
+          "satisfying": 64,
+          "selected": 64
+        },
+        {
+          "description": "Executor termination releases but never deletes the capacity or its license.",
+          "evidence_seq": 232,
+          "first_failing_seq": null,
+          "id": "IB.termination_retains_capacity",
+          "passed": true,
+          "quantifier": "all",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        }
+      ]
+    }
+  },
+  "IC": {
+    "baseline_capacity_count": 16,
+    "capacity_count": 32,
+    "copied_capacity_attempts": 32,
+    "copied_capacity_count": 16,
+    "copied_capacity_successes": 32,
+    "copied_successor_payments": 32,
+    "distinct_capacities_used": 32,
+    "event_count": 793,
+    "final_account_balances": {
+      "FS000": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "FS001": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "FS002": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "FS003": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "FS004": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "FS005": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "FS006": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "FS007": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "FS008": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "FS009": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "FS010": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "FS011": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "FS012": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "FS013": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "FS014": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "FS015": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P000": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P001": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P002": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P003": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P004": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P005": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P006": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P007": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P008": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P009": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P010": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P011": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P012": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P013": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P014": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "P015": {
+        "balance": 2,
+        "reserved": 0
+      },
+      "R000": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R001": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R002": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R003": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R004": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R005": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R006": {
+        "balance": 0,
+        "reserved": 0
+      },
+      "R007": {
+        "balance": 0,
+        "reserved": 0
+      }
+    },
+    "final_occupied_slots": 0,
+    "final_reserved_credits": 0,
+    "final_theta": 401,
+    "final_total_credits": 64,
+    "fission_events": 16,
+    "fission_successor_count": 16,
+    "fission_successors_created": [
+      "FS000",
+      "FS001",
+      "FS002",
+      "FS003",
+      "FS004",
+      "FS005",
+      "FS006",
+      "FS007",
+      "FS008",
+      "FS009",
+      "FS010",
+      "FS011",
+      "FS012",
+      "FS013",
+      "FS014",
+      "FS015"
+    ],
+    "inherited_commitments": 16,
+    "initial_total_credits": 64,
+    "institution_id": "IC",
+    "institutional_capacity_owners": {
+      "C000": "P000",
+      "C001": "P001",
+      "C002": "P002",
+      "C003": "P003",
+      "C004": "P004",
+      "C005": "P005",
+      "C006": "P006",
+      "C007": "P007",
+      "C008": "P008",
+      "C009": "P009",
+      "C010": "P010",
+      "C011": "P011",
+      "C012": "P012",
+      "C013": "P013",
+      "C014": "P014",
+      "C015": "P015",
+      "C016": "FS000",
+      "C017": "FS001",
+      "C018": "FS002",
+      "C019": "FS003",
+      "C020": "FS004",
+      "C021": "FS005",
+      "C022": "FS006",
+      "C023": "FS007",
+      "C024": "FS008",
+      "C025": "FS009",
+      "C026": "FS010",
+      "C027": "FS011",
+      "C028": "FS012",
+      "C029": "FS013",
+      "C030": "FS014",
+      "C031": "FS015"
+    },
+    "invariant_violation_count": 0,
+    "invariant_violations": [],
+    "joint_duties_bound": 64,
+    "joint_duties_discharged": 64,
+    "joint_duties_failed": 0,
+    "joint_duties_resolved": 64,
+    "lineage_members": {
+      "P000": [
+        "FS007",
+        "FS010",
+        "P000"
+      ],
+      "P001": [
+        "FS001",
+        "FS005",
+        "P001"
+      ],
+      "P002": [
+        "P002"
+      ],
+      "P003": [
+        "FS015",
+        "P003"
+      ],
+      "P004": [
+        "FS002",
+        "P004"
+      ],
+      "P005": [
+        "P005"
+      ],
+      "P006": [
+        "FS013",
+        "P006"
+      ],
+      "P007": [
+        "FS003",
+        "P007"
+      ],
+      "P008": [
+        "P008"
+      ],
+      "P009": [
+        "FS008",
+        "P009"
+      ],
+      "P010": [
+        "FS004",
+        "FS009",
+        "P010"
+      ],
+      "P011": [
+        "FS014",
+        "P011"
+      ],
+      "P012": [
+        "FS006",
+        "P012"
+      ],
+      "P013": [
+        "FS000",
+        "P013"
+      ],
+      "P014": [
+        "P014"
+      ],
+      "P015": [
+        "FS011",
+        "FS012",
+        "P015"
+      ]
+    },
+    "max_simultaneous_slot_occupancy": 4,
+    "multi_member_duties_bound": 56,
+    "positions": {
+      "provider_successor": 32,
+      "requester": 8
+    },
+    "principal_count": 40,
+    "prospective_payees": {
+      "T000": "P000",
+      "T001": "P001",
+      "T002": "P002",
+      "T003": "P003",
+      "T004": "P004",
+      "T005": "P005",
+      "T006": "P006",
+      "T007": "P007",
+      "T008": "P008",
+      "T009": "P009",
+      "T010": "P010",
+      "T011": "P011",
+      "T012": "P012",
+      "T013": "P013",
+      "T014": "P014",
+      "T015": "P015",
+      "T016": "FS000",
+      "T017": "FS001",
+      "T018": "FS002",
+      "T019": "FS003",
+      "T020": "FS004",
+      "T021": "FS005",
+      "T022": "FS006",
+      "T023": "FS007",
+      "T024": "FS008",
+      "T025": "FS009",
+      "T026": "FS010",
+      "T027": "FS011",
+      "T028": "FS012",
+      "T029": "FS013",
+      "T030": "FS014",
+      "T031": "FS015",
+      "T032": "P000",
+      "T033": "P001",
+      "T034": "P002",
+      "T035": "P003",
+      "T036": "P004",
+      "T037": "P005",
+      "T038": "P006",
+      "T039": "P007",
+      "T040": "P008",
+      "T041": "P009",
+      "T042": "P010",
+      "T043": "P011",
+      "T044": "P012",
+      "T045": "P013",
+      "T046": "P014",
+      "T047": "P015",
+      "T048": "FS000",
+      "T049": "FS001",
+      "T050": "FS002",
+      "T051": "FS003",
+      "T052": "FS004",
+      "T053": "FS005",
+      "T054": "FS006",
+      "T055": "FS007",
+      "T056": "FS008",
+      "T057": "FS009",
+      "T058": "FS010",
+      "T059": "FS011",
+      "T060": "FS012",
+      "T061": "FS013",
+      "T062": "FS014",
+      "T063": "FS015"
+    },
+    "realized_payees": {
+      "T000": "P000",
+      "T001": "P001",
+      "T002": "P002",
+      "T003": "P003",
+      "T004": "P004",
+      "T005": "P005",
+      "T006": "P006",
+      "T007": "P007",
+      "T008": "P008",
+      "T009": "P009",
+      "T010": "P010",
+      "T011": "P011",
+      "T012": "P012",
+      "T013": "P013",
+      "T014": "P014",
+      "T015": "P015",
+      "T016": "FS000",
+      "T017": "FS001",
+      "T018": "FS002",
+      "T019": "FS003",
+      "T020": "FS004",
+      "T021": "FS005",
+      "T022": "FS006",
+      "T023": "FS007",
+      "T024": "FS008",
+      "T025": "FS009",
+      "T026": "FS010",
+      "T027": "FS011",
+      "T028": "FS012",
+      "T029": "FS013",
+      "T030": "FS014",
+      "T031": "FS015",
+      "T032": "P000",
+      "T033": "P001",
+      "T034": "P002",
+      "T035": "P003",
+      "T036": "P004",
+      "T037": "P005",
+      "T038": "P006",
+      "T039": "P007",
+      "T040": "P008",
+      "T041": "P009",
+      "T042": "P010",
+      "T043": "P011",
+      "T044": "P012",
+      "T045": "P013",
+      "T046": "P014",
+      "T047": "P015",
+      "T048": "FS000",
+      "T049": "FS001",
+      "T050": "FS002",
+      "T051": "FS003",
+      "T052": "FS004",
+      "T053": "FS005",
+      "T054": "FS006",
+      "T055": "FS007",
+      "T056": "FS008",
+      "T057": "FS009",
+      "T058": "FS010",
+      "T059": "FS011",
+      "T060": "FS012",
+      "T061": "FS013",
+      "T062": "FS014",
+      "T063": "FS015"
+    },
+    "run_status": "completed",
+    "scenario_hash": "f0ec1decc0256820929553511842cc2577363da9f3355a2e410f4a2a9916b6f7",
+    "standing_commitments_registered": 16,
+    "standing_offers_registered": 32,
+    "tasks_attempted": 64,
+    "tasks_failed": 0,
+    "tasks_posted": 64,
+    "tasks_succeeded": 64,
+    "tasks_terminal": 64,
+    "valid": true,
+    "validation": {
+      "completion_checks": {
+        "all_tasks_terminal": true,
+        "credit_conserved": true,
+        "no_invariant_violations": true,
+        "no_reservations_remain": true,
+        "no_slots_occupied": true,
+        "run_completed": true
+      },
+      "descriptor_errors": [],
+      "passed": true,
+      "trace_audit": {
+        "passed": true,
+        "violations": []
+      },
+      "trace_requirements": [
+        {
+          "description": "Every task is posted exactly once by a principal with an account.",
+          "evidence_seq": 152,
+          "first_failing_seq": null,
+          "id": "common.tasks_posted",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        },
+        {
+          "description": "Every posted task is prefunded by a reservation from its requester.",
+          "evidence_seq": 153,
+          "first_failing_seq": null,
+          "id": "common.tasks_prefunded",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        },
+        {
+          "description": "Every task is matched exactly once, after its reservation.",
+          "evidence_seq": 281,
+          "first_failing_seq": null,
+          "id": "common.tasks_matched",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        },
+        {
+          "description": "Every task's attempt is mechanically verified after it completes.",
+          "evidence_seq": 293,
+          "first_failing_seq": null,
+          "id": "common.tasks_verified",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        },
+        {
+          "description": "Every task's reservation is transferred or released exactly once.",
+          "evidence_seq": 294,
+          "first_failing_seq": null,
+          "id": "common.tasks_settled",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        },
+        {
+          "description": "At least one task succeeds through a copy-derived capacity and is paid after verification.",
+          "evidence_seq": 414,
+          "first_failing_seq": null,
+          "id": "common.copied_capacity_settled_success",
+          "passed": true,
+          "quantifier": "at_least",
+          "required_count": 1,
+          "satisfying": 32,
+          "selected": 32
+        },
+        {
+          "description": "The run terminates cleanly exactly once.",
+          "evidence_seq": 792,
+          "first_failing_seq": null,
+          "id": "common.run_completed",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 1,
+          "satisfying": 1,
+          "selected": 1
+        },
+        {
+          "description": "One zero-balance successor account shell is created per copied capacity, distinct from its source.",
+          "evidence_seq": 56,
+          "first_failing_seq": null,
+          "id": "IC.fission_successors_created",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 16,
+          "satisfying": 16,
+          "selected": 16
+        },
+        {
+          "description": "Every founding provider registers one batch-wide standing commitment for its lineage.",
+          "evidence_seq": 72,
+          "first_failing_seq": null,
+          "id": "IC.standing_commitments_registered",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 16,
+          "satisfying": 16,
+          "selected": 16
+        },
+        {
+          "description": "Every copied capacity is recognized as a fission of its source into a successor.",
+          "evidence_seq": 88,
+          "first_failing_seq": null,
+          "id": "IC.every_copy_recognized_as_fission",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 16,
+          "satisfying": 16,
+          "selected": 16
+        },
+        {
+          "description": "Each successor inherits its lineage's standing commitment after its fission, without inheriting balance.",
+          "evidence_seq": 89,
+          "first_failing_seq": null,
+          "id": "IC.every_successor_inherits",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 16,
+          "satisfying": 16,
+          "selected": 16
+        },
+        {
+          "description": "Every capacity carries one irrevocable batch-wide offer by its owner under its lineage's commitment.",
+          "evidence_seq": 120,
+          "first_failing_seq": null,
+          "id": "IC.every_capacity_offered",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 32,
+          "satisfying": 32,
+          "selected": 32
+        },
+        {
+          "description": "Every task binds a successor set; its executor, capacity owner and prospective payee are one principal with an account.",
+          "evidence_seq": 280,
+          "first_failing_seq": null,
+          "id": "IC.every_task_binds_successor_set",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        },
+        {
+          "description": "Every task's joint duty is resolved once, after its binding and verification.",
+          "evidence_seq": 295,
+          "first_failing_seq": null,
+          "id": "IC.every_task_duty_resolved",
+          "passed": true,
+          "quantifier": "exactly",
+          "required_count": 64,
+          "satisfying": 64,
+          "selected": 64
+        },
+        {
+          "description": "A copied successor (not the source) is bound, paid after verified success, and discharges the joint duty.",
+          "evidence_seq": 393,
+          "first_failing_seq": null,
+          "id": "IC.copied_successor_exercised",
+          "passed": true,
+          "quantifier": "at_least",
+          "required_count": 1,
+          "satisfying": 32,
+          "selected": 32
+        },
+        {
+          "description": "Every copied-capacity binding is scoped to the source's lineage: its root bears the standing commitment and its executor inherited it.  Membership of both in co_obligor_ids is enforced by plugin invariants.",
+          "evidence_seq": 393,
+          "first_failing_seq": null,
+          "id": "IC.copied_binding_lineage_scoped",
+          "passed": true,
+          "quantifier": "all",
+          "required_count": 1,
+          "satisfying": 32,
+          "selected": 32
+        },
+        {
+          "description": "Every payment goes to the executor bound for that task, never to a co-obligor for membership alone.",
+          "evidence_seq": 294,
+          "first_failing_seq": null,
+          "id": "IC.payee_is_bound_executor",
+          "passed": true,
+          "quantifier": "all",
+          "required_count": 1,
+          "satisfying": 64,
+          "selected": 64
+        }
+      ]
+    }
+  },
+  "comparisons": {
+    "IA_IB": {
+      "checks": [
+        {
+          "description": "Every member ran the identical immutable scenario.",
+          "detail": {
+            "IA": "f0ec1decc0256820929553511842cc2577363da9f3355a2e410f4a2a9916b6f7",
+            "IB": "f0ec1decc0256820929553511842cc2577363da9f3355a2e410f4a2a9916b6f7"
+          },
+          "id": "identical_scenario_input",
+          "passed": true
+        },
+        {
+          "description": "Every member run completed.",
+          "detail": {
+            "IA": "completed",
+            "IB": "completed"
+          },
+          "id": "members_completed",
+          "passed": true
+        },
+        {
+          "description": "Task-capacity matches, planner results, expansions, verification outcomes and completion times are identical across members.",
+          "detail": {
+            "IA": "6aab3a0754b3c1200df7cfd8c7bc96d33b3c57173356f526a20d7f2123a58efc",
+            "IB": "6aab3a0754b3c1200df7cfd8c7bc96d33b3c57173356f526a20d7f2123a58efc"
+          },
+          "id": "identical_technical_projection",
+          "passed": true
+        },
+        {
+          "description": "A qualifying paired task exists.",
+          "detail": {
+            "task_id": "T016"
+          },
+          "id": "paired_task_selected",
+          "passed": true
+        },
+        {
+          "description": "Both members run the same copied task-capacity pair with the same technical result.",
+          "detail": "identical",
+          "id": "same_task_capacity_and_technical_result",
+          "passed": true
+        },
+        {
+          "description": "Executor identity and type, capacity owner and payee differ between members.",
+          "detail": {
+            "capacity_owner_id": {
+              "IA": "CP000",
+              "IB": "P013"
+            },
+            "executor_id": {
+              "IA": "CP000",
+              "IB": "X-T016-C016"
+            },
+            "executor_kind": {
+              "IA": "principal",
+              "IB": "temporary"
+            },
+            "payee_id": {
+              "IA": "CP000",
+              "IB": "P013"
+            }
+          },
+          "id": "different_institutional_facts",
+          "passed": true
+        },
+        {
+          "description": "IA: executor, capacity owner, prospective payee and payee are one principal.",
+          "detail": {
+            "capacity_owner_id": "CP000",
+            "executor_id": "CP000",
+            "payee_id": "CP000",
+            "prospective_payee_id": "CP000"
+          },
+          "id": "IA_provider_bundle",
+          "passed": true
+        },
+        {
+          "description": "IA: the executor is a persistent economic principal.",
+          "detail": {
+            "executor_kind": "principal"
+          },
+          "id": "IA_executor_is_principal",
+          "passed": true
+        },
+        {
+          "description": "IA: the payee for the copied capacity is its copied principal.",
+          "detail": {
+            "payee_id": "CP000",
+            "summary_key": "copied_principals_created"
+          },
+          "id": "IA_payee_is_copied_principal",
+          "passed": true
+        },
+        {
+          "description": "IA: the copy source is not paid.",
+          "detail": {
+            "payee_id": "CP000",
+            "source_provider_id": "P013"
+          },
+          "id": "IA_payee_is_not_copy_source",
+          "passed": true
+        },
+        {
+          "description": "IA: offer, post and reserve, bind provider, execute, verify, settle, release.",
+          "detail": {
+            "matched": 10,
+            "required_order": [
+              "offer_registered",
+              "task_posted",
+              "credit_reserved",
+              "provider_bound",
+              "task_matched",
+              "attempt_started",
+              "attempt_completed",
+              "verification_succeeded",
+              "credit_transferred",
+              "capacity_released"
+            ]
+          },
+          "id": "IA_institutional_path",
+          "passed": true
+        },
+        {
+          "description": "IB: capacity owner, prospective payee and payee are the founding source owner.",
+          "detail": {
+            "capacity_owner_id": "P013",
+            "payee_id": "P013",
+            "prospective_payee_id": "P013",
+            "source_provider_id": "P013"
+          },
+          "id": "IB_owner_is_licensor_and_payee",
+          "passed": true
+        },
+        {
+          "description": "IB: the executor is a temporary, non-principal position.",
+          "detail": {
+            "executor_kind": "temporary"
+          },
+          "id": "IB_executor_is_temporary",
+          "passed": true
+        },
+        {
+          "description": "IB: capacity owner differs from the temporary executor.",
+          "detail": {
+            "executor_id": "X-T016-C016",
+            "payee_id": "P013"
+          },
+          "id": "IB_executor_is_not_payee",
+          "passed": true
+        },
+        {
+          "description": "IB: the temporary executor never has an account.",
+          "detail": {
+            "executor_id": "X-T016-C016"
+          },
+          "id": "IB_executor_has_no_account",
+          "passed": true
+        },
+        {
+          "description": "IB: license, post and reserve, instantiate executor, execute, verify, settle, terminate, release.",
+          "detail": {
+            "matched": 11,
+            "required_order": [
+              "license_registered",
+              "task_posted",
+              "credit_reserved",
+              "executor_instantiated",
+              "task_matched",
+              "attempt_started",
+              "attempt_completed",
+              "verification_succeeded",
+              "credit_transferred",
+              "executor_terminated",
+              "capacity_released"
+            ]
+          },
+          "id": "IB_institutional_path",
+          "passed": true
+        }
+      ],
+      "paired_trace": {
+        "capacity_id": "C016",
+        "members": {
+          "IA": {
+            "account_delta": {
+              "CP000": 1,
+              "R000": -1
+            },
+            "capacity_id": "C016",
+            "capacity_origin": "copy",
+            "capacity_owner_id": "CP000",
+            "completion_theta": 109,
+            "event_types": [
+              "capacity_registered",
+              "principal_created",
+              "offer_registered",
+              "task_posted",
+              "credit_reserved",
+              "provider_bound",
+              "task_matched",
+              "attempt_started",
+              "attempt_completed",
+              "verification_succeeded",
+              "credit_transferred",
+              "obligations_discharged",
+              "capacity_released"
+            ],
+            "events": [
+              {
+                "amount": null,
+                "event_type": "capacity_registered",
+                "executor_id": null,
+                "principal_id": null,
+                "seq": 40,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": 0,
+                "event_type": "principal_created",
+                "executor_id": null,
+                "principal_id": "CP000",
+                "seq": 56,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": null,
+                "event_type": "offer_registered",
+                "executor_id": null,
+                "principal_id": "CP000",
+                "seq": 88,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": 1,
+                "event_type": "task_posted",
+                "executor_id": null,
+                "principal_id": "R000",
+                "seq": 136,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": 1,
+                "event_type": "credit_reserved",
+                "executor_id": null,
+                "principal_id": "R000",
+                "seq": 137,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": null,
+                "event_type": "provider_bound",
+                "executor_id": "CP000",
+                "principal_id": "CP000",
+                "seq": 345,
+                "slot_id": null,
+                "theta": 95
+              },
+              {
+                "amount": null,
+                "event_type": "task_matched",
+                "executor_id": "CP000",
+                "principal_id": "R000",
+                "seq": 346,
+                "slot_id": "S1",
+                "theta": 95
+              },
+              {
+                "amount": null,
+                "event_type": "attempt_started",
+                "executor_id": "CP000",
+                "principal_id": "CP000",
+                "seq": 347,
+                "slot_id": "S1",
+                "theta": 95
+              },
+              {
+                "amount": null,
+                "event_type": "attempt_completed",
+                "executor_id": "CP000",
+                "principal_id": "CP000",
+                "seq": 364,
+                "slot_id": "S1",
+                "theta": 109
+              },
+              {
+                "amount": null,
+                "event_type": "verification_succeeded",
+                "executor_id": "CP000",
+                "principal_id": "R000",
+                "seq": 365,
+                "slot_id": "S1",
+                "theta": 109
+              },
+              {
+                "amount": 1,
+                "event_type": "credit_transferred",
+                "executor_id": "CP000",
+                "principal_id": "CP000",
+                "seq": 366,
+                "slot_id": "S1",
+                "theta": 109
+              },
+              {
+                "amount": null,
+                "event_type": "obligations_discharged",
+                "executor_id": "CP000",
+                "principal_id": "CP000",
+                "seq": 367,
+                "slot_id": null,
+                "theta": 109
+              },
+              {
+                "amount": null,
+                "event_type": "capacity_released",
+                "executor_id": "CP000",
+                "principal_id": "CP000",
+                "seq": 368,
+                "slot_id": "S1",
+                "theta": 109
+              }
+            ],
+            "executor_id": "CP000",
+            "executor_kind": "principal",
+            "expansions": 14,
+            "hops": 13,
+            "module": "weighted",
+            "path": [
+              [
+                3,
+                8
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                4,
+                7
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                6
+              ],
+              [
+                7,
+                6
+              ],
+              [
+                8,
+                6
+              ],
+              [
+                8,
+                5
+              ],
+              [
+                8,
+                4
+              ],
+              [
+                8,
+                3
+              ],
+              [
+                8,
+                2
+              ],
+              [
+                8,
+                1
+              ],
+              [
+                8,
+                0
+              ]
+            ],
+            "payee_id": "CP000",
+            "planner_status": "found",
+            "prospective_payee_id": "CP000",
+            "realized_cost": 16,
+            "requester_id": "R000",
+            "slot_id": "S1",
+            "source_provider_id": "P013",
+            "start_theta": 95,
+            "task_id": "T016",
+            "verification_outcome": "succeeded"
+          },
+          "IB": {
+            "account_delta": {
+              "P013": 1,
+              "R000": -1
+            },
+            "capacity_id": "C016",
+            "capacity_origin": "copy",
+            "capacity_owner_id": "P013",
+            "completion_theta": 109,
+            "event_types": [
+              "principal_created",
+              "capacity_registered",
+              "license_registered",
+              "task_posted",
+              "credit_reserved",
+              "executor_instantiated",
+              "task_matched",
+              "attempt_started",
+              "attempt_completed",
+              "verification_succeeded",
+              "credit_transferred",
+              "obligations_discharged",
+              "executor_terminated",
+              "capacity_released"
+            ],
+            "events": [
+              {
+                "amount": 0,
+                "event_type": "principal_created",
+                "executor_id": null,
+                "principal_id": "P013",
+                "seq": 21,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": null,
+                "event_type": "capacity_registered",
+                "executor_id": null,
+                "principal_id": null,
+                "seq": 40,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": null,
+                "event_type": "license_registered",
+                "executor_id": null,
+                "principal_id": "P013",
+                "seq": 72,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": 1,
+                "event_type": "task_posted",
+                "executor_id": null,
+                "principal_id": "R000",
+                "seq": 120,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": 1,
+                "event_type": "credit_reserved",
+                "executor_id": null,
+                "principal_id": "R000",
+                "seq": 121,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": null,
+                "event_type": "executor_instantiated",
+                "executor_id": "X-T016-C016",
+                "principal_id": "P013",
+                "seq": 342,
+                "slot_id": null,
+                "theta": 95
+              },
+              {
+                "amount": null,
+                "event_type": "task_matched",
+                "executor_id": "X-T016-C016",
+                "principal_id": "R000",
+                "seq": 343,
+                "slot_id": "S1",
+                "theta": 95
+              },
+              {
+                "amount": null,
+                "event_type": "attempt_started",
+                "executor_id": "X-T016-C016",
+                "principal_id": "P013",
+                "seq": 344,
+                "slot_id": "S1",
+                "theta": 95
+              },
+              {
+                "amount": null,
+                "event_type": "attempt_completed",
+                "executor_id": "X-T016-C016",
+                "principal_id": "P013",
+                "seq": 363,
+                "slot_id": "S1",
+                "theta": 109
+              },
+              {
+                "amount": null,
+                "event_type": "verification_succeeded",
+                "executor_id": "X-T016-C016",
+                "principal_id": "R000",
+                "seq": 364,
+                "slot_id": "S1",
+                "theta": 109
+              },
+              {
+                "amount": 1,
+                "event_type": "credit_transferred",
+                "executor_id": "X-T016-C016",
+                "principal_id": "P013",
+                "seq": 365,
+                "slot_id": "S1",
+                "theta": 109
+              },
+              {
+                "amount": null,
+                "event_type": "obligations_discharged",
+                "executor_id": "X-T016-C016",
+                "principal_id": "P013",
+                "seq": 366,
+                "slot_id": null,
+                "theta": 109
+              },
+              {
+                "amount": null,
+                "event_type": "executor_terminated",
+                "executor_id": "X-T016-C016",
+                "principal_id": "P013",
+                "seq": 367,
+                "slot_id": null,
+                "theta": 109
+              },
+              {
+                "amount": null,
+                "event_type": "capacity_released",
+                "executor_id": "X-T016-C016",
+                "principal_id": "P013",
+                "seq": 368,
+                "slot_id": "S1",
+                "theta": 109
+              }
+            ],
+            "executor_id": "X-T016-C016",
+            "executor_kind": "temporary",
+            "expansions": 14,
+            "hops": 13,
+            "module": "weighted",
+            "path": [
+              [
+                3,
+                8
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                4,
+                7
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                6
+              ],
+              [
+                7,
+                6
+              ],
+              [
+                8,
+                6
+              ],
+              [
+                8,
+                5
+              ],
+              [
+                8,
+                4
+              ],
+              [
+                8,
+                3
+              ],
+              [
+                8,
+                2
+              ],
+              [
+                8,
+                1
+              ],
+              [
+                8,
+                0
+              ]
+            ],
+            "payee_id": "P013",
+            "planner_status": "found",
+            "prospective_payee_id": "P013",
+            "realized_cost": 16,
+            "requester_id": "R000",
+            "slot_id": "S1",
+            "source_provider_id": "P013",
+            "start_theta": 95,
+            "task_id": "T016",
+            "verification_outcome": "succeeded"
+          }
+        },
+        "task_id": "T016"
+      },
+      "passed": true,
+      "profile": {
+        "comparison_invariants": [
+          {
+            "description": "Both members run the same copied task-capacity pair with the same technical result.",
+            "fields": [
+              "task_id",
+              "requester_id",
+              "capacity_id",
+              "capacity_origin",
+              "source_provider_id",
+              "module",
+              "slot_id",
+              "planner_status",
+              "path",
+              "expansions",
+              "verification_outcome",
+              "realized_cost",
+              "hops",
+              "start_theta",
+              "completion_theta"
+            ],
+            "id": "same_task_capacity_and_technical_result",
+            "kind": "same_across_members"
+          },
+          {
+            "description": "Executor identity and type, capacity owner and payee differ between members.",
+            "fields": [
+              "executor_id",
+              "executor_kind",
+              "capacity_owner_id",
+              "payee_id"
+            ],
+            "id": "different_institutional_facts",
+            "kind": "differ_across_members"
+          },
+          {
+            "description": "IA: executor, capacity owner, prospective payee and payee are one principal.",
+            "fields": [
+              "executor_id",
+              "capacity_owner_id",
+              "prospective_payee_id",
+              "payee_id"
+            ],
+            "id": "IA_provider_bundle",
+            "kind": "member_fields_equal",
+            "member": "IA"
+          },
+          {
+            "description": "IA: the executor is a persistent economic principal.",
+            "field": "executor_kind",
+            "id": "IA_executor_is_principal",
+            "kind": "member_field_equals",
+            "member": "IA",
+            "value": "principal"
+          },
+          {
+            "description": "IA: the payee for the copied capacity is its copied principal.",
+            "field": "payee_id",
+            "id": "IA_payee_is_copied_principal",
+            "kind": "member_field_in_summary",
+            "member": "IA",
+            "summary_key": "copied_principals_created"
+          },
+          {
+            "description": "IA: the copy source is not paid.",
+            "fields": [
+              "payee_id",
+              "source_provider_id"
+            ],
+            "id": "IA_payee_is_not_copy_source",
+            "kind": "member_fields_distinct",
+            "member": "IA"
+          },
+          {
+            "description": "IA: offer, post and reserve, bind provider, execute, verify, settle, release.",
+            "event_types": [
+              "offer_registered",
+              "task_posted",
+              "credit_reserved",
+              "provider_bound",
+              "task_matched",
+              "attempt_started",
+              "attempt_completed",
+              "verification_succeeded",
+              "credit_transferred",
+              "capacity_released"
+            ],
+            "id": "IA_institutional_path",
+            "kind": "member_event_subsequence",
+            "member": "IA"
+          },
+          {
+            "description": "IB: capacity owner, prospective payee and payee are the founding source owner.",
+            "fields": [
+              "capacity_owner_id",
+              "prospective_payee_id",
+              "payee_id",
+              "source_provider_id"
+            ],
+            "id": "IB_owner_is_licensor_and_payee",
+            "kind": "member_fields_equal",
+            "member": "IB"
+          },
+          {
+            "description": "IB: the executor is a temporary, non-principal position.",
+            "field": "executor_kind",
+            "id": "IB_executor_is_temporary",
+            "kind": "member_field_equals",
+            "member": "IB",
+            "value": "temporary"
+          },
+          {
+            "description": "IB: capacity owner differs from the temporary executor.",
+            "fields": [
+              "executor_id",
+              "payee_id"
+            ],
+            "id": "IB_executor_is_not_payee",
+            "kind": "member_fields_distinct",
+            "member": "IB"
+          },
+          {
+            "description": "IB: the temporary executor never has an account.",
+            "field": "executor_id",
+            "id": "IB_executor_has_no_account",
+            "kind": "member_no_account",
+            "member": "IB"
+          },
+          {
+            "description": "IB: license, post and reserve, instantiate executor, execute, verify, settle, terminate, release.",
+            "event_types": [
+              "license_registered",
+              "task_posted",
+              "credit_reserved",
+              "executor_instantiated",
+              "task_matched",
+              "attempt_started",
+              "attempt_completed",
+              "verification_succeeded",
+              "credit_transferred",
+              "executor_terminated",
+              "capacity_released"
+            ],
+            "id": "IB_institutional_path",
+            "kind": "member_event_subsequence",
+            "member": "IB"
+          }
+        ],
+        "institution_ids": [
+          "IA",
+          "IB"
+        ],
+        "paired_trace_selector": {
+          "kind": "lowest_task_id",
+          "require": {
+            "capacity_origin": "copy",
+            "settlement_kind": "transferred",
+            "verification_outcome": "succeeded"
+          },
+          "same_capacity_across_members": true
+        },
+        "profile_id": "IA_IB",
+        "require_same_technical_projection": true
+      }
+    },
+    "IA_IC": {
+      "checks": [
+        {
+          "description": "Every member ran the identical immutable scenario.",
+          "detail": {
+            "IA": "f0ec1decc0256820929553511842cc2577363da9f3355a2e410f4a2a9916b6f7",
+            "IC": "f0ec1decc0256820929553511842cc2577363da9f3355a2e410f4a2a9916b6f7"
+          },
+          "id": "identical_scenario_input",
+          "passed": true
+        },
+        {
+          "description": "Every member run completed.",
+          "detail": {
+            "IA": "completed",
+            "IC": "completed"
+          },
+          "id": "members_completed",
+          "passed": true
+        },
+        {
+          "description": "Task-capacity matches, planner results, expansions, verification outcomes and completion times are identical across members.",
+          "detail": {
+            "IA": "6aab3a0754b3c1200df7cfd8c7bc96d33b3c57173356f526a20d7f2123a58efc",
+            "IC": "6aab3a0754b3c1200df7cfd8c7bc96d33b3c57173356f526a20d7f2123a58efc"
+          },
+          "id": "identical_technical_projection",
+          "passed": true
+        },
+        {
+          "description": "A qualifying paired task exists.",
+          "detail": {
+            "task_id": "T016"
+          },
+          "id": "paired_task_selected",
+          "passed": true
+        },
+        {
+          "description": "Both members run the same copied task-capacity pair with the same technical result.",
+          "detail": "identical",
+          "id": "same_task_capacity_and_technical_result",
+          "passed": true
+        },
+        {
+          "description": "IA: executor, capacity owner, prospective payee and payee are one principal.",
+          "detail": {
+            "capacity_owner_id": "CP000",
+            "executor_id": "CP000",
+            "payee_id": "CP000",
+            "prospective_payee_id": "CP000"
+          },
+          "id": "IA_provider_bundle",
+          "passed": true
+        },
+        {
+          "description": "IA: the executor is a persistent economic principal.",
+          "detail": {
+            "executor_kind": "principal"
+          },
+          "id": "IA_executor_is_principal",
+          "passed": true
+        },
+        {
+          "description": "IA: the payee for the copied capacity is its copied principal.",
+          "detail": {
+            "payee_id": "CP000",
+            "summary_key": "copied_principals_created"
+          },
+          "id": "IA_payee_is_copied_principal",
+          "passed": true
+        },
+        {
+          "description": "IA: the copy source is not paid.",
+          "detail": {
+            "payee_id": "CP000",
+            "source_provider_id": "P013"
+          },
+          "id": "IA_payee_is_not_copy_source",
+          "passed": true
+        },
+        {
+          "description": "IA: offer, post and reserve, bind provider, execute, verify, settle, release.",
+          "detail": {
+            "matched": 10,
+            "required_order": [
+              "offer_registered",
+              "task_posted",
+              "credit_reserved",
+              "provider_bound",
+              "task_matched",
+              "attempt_started",
+              "attempt_completed",
+              "verification_succeeded",
+              "credit_transferred",
+              "capacity_released"
+            ]
+          },
+          "id": "IA_institutional_path",
+          "passed": true
+        },
+        {
+          "description": "IC: executor, capacity owner, prospective payee and payee are one successor-principal.",
+          "detail": {
+            "capacity_owner_id": "FS000",
+            "executor_id": "FS000",
+            "payee_id": "FS000",
+            "prospective_payee_id": "FS000"
+          },
+          "id": "IC_successor_bundle",
+          "passed": true
+        },
+        {
+          "description": "IC: the copied-capacity executor is a persistent economic principal.",
+          "detail": {
+            "executor_kind": "principal"
+          },
+          "id": "IC_executor_is_principal",
+          "passed": true
+        },
+        {
+          "description": "IC: the payee for the copied capacity is the fission successor created for it.",
+          "detail": {
+            "payee_id": "FS000",
+            "summary_key": "fission_successors_created"
+          },
+          "id": "IC_payee_is_fission_successor",
+          "passed": true
+        },
+        {
+          "description": "IC: the source successor is a co-obligor but is not paid.",
+          "detail": {
+            "payee_id": "FS000",
+            "source_provider_id": "P013"
+          },
+          "id": "IC_payee_is_not_copy_source",
+          "passed": true
+        },
+        {
+          "description": "IC: fission, inherited commitment, successor offer, successor-set binding, execute, verify, settle, resolve joint duty, release.",
+          "detail": {
+            "matched": 11,
+            "required_order": [
+              "principal_fissioned",
+              "successor_commitment_inherited",
+              "successor_offer_registered",
+              "successor_set_bound",
+              "task_matched",
+              "attempt_started",
+              "attempt_completed",
+              "verification_succeeded",
+              "credit_transferred",
+              "joint_duty_resolved",
+              "capacity_released"
+            ]
+          },
+          "id": "IC_institutional_path",
+          "passed": true
+        },
+        {
+          "description": "The two paired traces follow different institutional event paths.  IC's fission, inherited-commitment and successor-set events cannot occur in IA's trace: they are outside IA's declared event vocabulary, which the kernel and trace audit enforce.",
+          "detail": {
+            "event_types": {
+              "IA": [
+                "capacity_registered",
+                "principal_created",
+                "offer_registered",
+                "task_posted",
+                "credit_reserved",
+                "provider_bound",
+                "task_matched",
+                "attempt_started",
+                "attempt_completed",
+                "verification_succeeded",
+                "credit_transferred",
+                "obligations_discharged",
+                "capacity_released"
+              ],
+              "IC": [
+                "capacity_registered",
+                "principal_created",
+                "principal_fissioned",
+                "successor_commitment_inherited",
+                "successor_offer_registered",
+                "task_posted",
+                "credit_reserved",
+                "successor_set_bound",
+                "task_matched",
+                "attempt_started",
+                "attempt_completed",
+                "verification_succeeded",
+                "credit_transferred",
+                "joint_duty_resolved",
+                "capacity_released"
+              ]
+            }
+          },
+          "id": "different_institutional_paths",
+          "passed": true
+        }
+      ],
+      "paired_trace": {
+        "capacity_id": "C016",
+        "members": {
+          "IA": {
+            "account_delta": {
+              "CP000": 1,
+              "R000": -1
+            },
+            "capacity_id": "C016",
+            "capacity_origin": "copy",
+            "capacity_owner_id": "CP000",
+            "completion_theta": 109,
+            "event_types": [
+              "capacity_registered",
+              "principal_created",
+              "offer_registered",
+              "task_posted",
+              "credit_reserved",
+              "provider_bound",
+              "task_matched",
+              "attempt_started",
+              "attempt_completed",
+              "verification_succeeded",
+              "credit_transferred",
+              "obligations_discharged",
+              "capacity_released"
+            ],
+            "events": [
+              {
+                "amount": null,
+                "event_type": "capacity_registered",
+                "executor_id": null,
+                "principal_id": null,
+                "seq": 40,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": 0,
+                "event_type": "principal_created",
+                "executor_id": null,
+                "principal_id": "CP000",
+                "seq": 56,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": null,
+                "event_type": "offer_registered",
+                "executor_id": null,
+                "principal_id": "CP000",
+                "seq": 88,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": 1,
+                "event_type": "task_posted",
+                "executor_id": null,
+                "principal_id": "R000",
+                "seq": 136,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": 1,
+                "event_type": "credit_reserved",
+                "executor_id": null,
+                "principal_id": "R000",
+                "seq": 137,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": null,
+                "event_type": "provider_bound",
+                "executor_id": "CP000",
+                "principal_id": "CP000",
+                "seq": 345,
+                "slot_id": null,
+                "theta": 95
+              },
+              {
+                "amount": null,
+                "event_type": "task_matched",
+                "executor_id": "CP000",
+                "principal_id": "R000",
+                "seq": 346,
+                "slot_id": "S1",
+                "theta": 95
+              },
+              {
+                "amount": null,
+                "event_type": "attempt_started",
+                "executor_id": "CP000",
+                "principal_id": "CP000",
+                "seq": 347,
+                "slot_id": "S1",
+                "theta": 95
+              },
+              {
+                "amount": null,
+                "event_type": "attempt_completed",
+                "executor_id": "CP000",
+                "principal_id": "CP000",
+                "seq": 364,
+                "slot_id": "S1",
+                "theta": 109
+              },
+              {
+                "amount": null,
+                "event_type": "verification_succeeded",
+                "executor_id": "CP000",
+                "principal_id": "R000",
+                "seq": 365,
+                "slot_id": "S1",
+                "theta": 109
+              },
+              {
+                "amount": 1,
+                "event_type": "credit_transferred",
+                "executor_id": "CP000",
+                "principal_id": "CP000",
+                "seq": 366,
+                "slot_id": "S1",
+                "theta": 109
+              },
+              {
+                "amount": null,
+                "event_type": "obligations_discharged",
+                "executor_id": "CP000",
+                "principal_id": "CP000",
+                "seq": 367,
+                "slot_id": null,
+                "theta": 109
+              },
+              {
+                "amount": null,
+                "event_type": "capacity_released",
+                "executor_id": "CP000",
+                "principal_id": "CP000",
+                "seq": 368,
+                "slot_id": "S1",
+                "theta": 109
+              }
+            ],
+            "executor_id": "CP000",
+            "executor_kind": "principal",
+            "expansions": 14,
+            "hops": 13,
+            "module": "weighted",
+            "path": [
+              [
+                3,
+                8
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                4,
+                7
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                6
+              ],
+              [
+                7,
+                6
+              ],
+              [
+                8,
+                6
+              ],
+              [
+                8,
+                5
+              ],
+              [
+                8,
+                4
+              ],
+              [
+                8,
+                3
+              ],
+              [
+                8,
+                2
+              ],
+              [
+                8,
+                1
+              ],
+              [
+                8,
+                0
+              ]
+            ],
+            "payee_id": "CP000",
+            "planner_status": "found",
+            "prospective_payee_id": "CP000",
+            "realized_cost": 16,
+            "requester_id": "R000",
+            "slot_id": "S1",
+            "source_provider_id": "P013",
+            "start_theta": 95,
+            "task_id": "T016",
+            "verification_outcome": "succeeded"
+          },
+          "IC": {
+            "account_delta": {
+              "FS000": 1,
+              "R000": -1
+            },
+            "capacity_id": "C016",
+            "capacity_origin": "copy",
+            "capacity_owner_id": "FS000",
+            "completion_theta": 109,
+            "event_types": [
+              "capacity_registered",
+              "principal_created",
+              "principal_fissioned",
+              "successor_commitment_inherited",
+              "successor_offer_registered",
+              "task_posted",
+              "credit_reserved",
+              "successor_set_bound",
+              "task_matched",
+              "attempt_started",
+              "attempt_completed",
+              "verification_succeeded",
+              "credit_transferred",
+              "joint_duty_resolved",
+              "capacity_released"
+            ],
+            "events": [
+              {
+                "amount": null,
+                "event_type": "capacity_registered",
+                "executor_id": null,
+                "principal_id": null,
+                "seq": 40,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": 0,
+                "event_type": "principal_created",
+                "executor_id": null,
+                "principal_id": "FS000",
+                "seq": 56,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": null,
+                "event_type": "principal_fissioned",
+                "executor_id": null,
+                "principal_id": "P013",
+                "seq": 88,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": null,
+                "event_type": "successor_commitment_inherited",
+                "executor_id": null,
+                "principal_id": "FS000",
+                "seq": 89,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": null,
+                "event_type": "successor_offer_registered",
+                "executor_id": null,
+                "principal_id": "FS000",
+                "seq": 136,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": 1,
+                "event_type": "task_posted",
+                "executor_id": null,
+                "principal_id": "R000",
+                "seq": 184,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": 1,
+                "event_type": "credit_reserved",
+                "executor_id": null,
+                "principal_id": "R000",
+                "seq": 185,
+                "slot_id": null,
+                "theta": 0
+              },
+              {
+                "amount": null,
+                "event_type": "successor_set_bound",
+                "executor_id": "FS000",
+                "principal_id": "FS000",
+                "seq": 393,
+                "slot_id": null,
+                "theta": 95
+              },
+              {
+                "amount": null,
+                "event_type": "task_matched",
+                "executor_id": "FS000",
+                "principal_id": "R000",
+                "seq": 394,
+                "slot_id": "S1",
+                "theta": 95
+              },
+              {
+                "amount": null,
+                "event_type": "attempt_started",
+                "executor_id": "FS000",
+                "principal_id": "FS000",
+                "seq": 395,
+                "slot_id": "S1",
+                "theta": 95
+              },
+              {
+                "amount": null,
+                "event_type": "attempt_completed",
+                "executor_id": "FS000",
+                "principal_id": "FS000",
+                "seq": 412,
+                "slot_id": "S1",
+                "theta": 109
+              },
+              {
+                "amount": null,
+                "event_type": "verification_succeeded",
+                "executor_id": "FS000",
+                "principal_id": "R000",
+                "seq": 413,
+                "slot_id": "S1",
+                "theta": 109
+              },
+              {
+                "amount": 1,
+                "event_type": "credit_transferred",
+                "executor_id": "FS000",
+                "principal_id": "FS000",
+                "seq": 414,
+                "slot_id": "S1",
+                "theta": 109
+              },
+              {
+                "amount": null,
+                "event_type": "joint_duty_resolved",
+                "executor_id": "FS000",
+                "principal_id": "FS000",
+                "seq": 415,
+                "slot_id": null,
+                "theta": 109
+              },
+              {
+                "amount": null,
+                "event_type": "capacity_released",
+                "executor_id": "FS000",
+                "principal_id": "FS000",
+                "seq": 416,
+                "slot_id": "S1",
+                "theta": 109
+              }
+            ],
+            "executor_id": "FS000",
+            "executor_kind": "principal",
+            "expansions": 14,
+            "hops": 13,
+            "module": "weighted",
+            "path": [
+              [
+                3,
+                8
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                4,
+                7
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                6
+              ],
+              [
+                7,
+                6
+              ],
+              [
+                8,
+                6
+              ],
+              [
+                8,
+                5
+              ],
+              [
+                8,
+                4
+              ],
+              [
+                8,
+                3
+              ],
+              [
+                8,
+                2
+              ],
+              [
+                8,
+                1
+              ],
+              [
+                8,
+                0
+              ]
+            ],
+            "payee_id": "FS000",
+            "planner_status": "found",
+            "prospective_payee_id": "FS000",
+            "realized_cost": 16,
+            "requester_id": "R000",
+            "slot_id": "S1",
+            "source_provider_id": "P013",
+            "start_theta": 95,
+            "task_id": "T016",
+            "verification_outcome": "succeeded"
+          }
+        },
+        "task_id": "T016"
+      },
+      "passed": true,
+      "profile": {
+        "comparison_invariants": [
+          {
+            "description": "Both members run the same copied task-capacity pair with the same technical result.",
+            "fields": [
+              "task_id",
+              "requester_id",
+              "capacity_id",
+              "capacity_origin",
+              "source_provider_id",
+              "module",
+              "slot_id",
+              "planner_status",
+              "path",
+              "expansions",
+              "verification_outcome",
+              "realized_cost",
+              "hops",
+              "start_theta",
+              "completion_theta"
+            ],
+            "id": "same_task_capacity_and_technical_result",
+            "kind": "same_across_members"
+          },
+          {
+            "description": "IA: executor, capacity owner, prospective payee and payee are one principal.",
+            "fields": [
+              "executor_id",
+              "capacity_owner_id",
+              "prospective_payee_id",
+              "payee_id"
+            ],
+            "id": "IA_provider_bundle",
+            "kind": "member_fields_equal",
+            "member": "IA"
+          },
+          {
+            "description": "IA: the executor is a persistent economic principal.",
+            "field": "executor_kind",
+            "id": "IA_executor_is_principal",
+            "kind": "member_field_equals",
+            "member": "IA",
+            "value": "principal"
+          },
+          {
+            "description": "IA: the payee for the copied capacity is its copied principal.",
+            "field": "payee_id",
+            "id": "IA_payee_is_copied_principal",
+            "kind": "member_field_in_summary",
+            "member": "IA",
+            "summary_key": "copied_principals_created"
+          },
+          {
+            "description": "IA: the copy source is not paid.",
+            "fields": [
+              "payee_id",
+              "source_provider_id"
+            ],
+            "id": "IA_payee_is_not_copy_source",
+            "kind": "member_fields_distinct",
+            "member": "IA"
+          },
+          {
+            "description": "IA: offer, post and reserve, bind provider, execute, verify, settle, release.",
+            "event_types": [
+              "offer_registered",
+              "task_posted",
+              "credit_reserved",
+              "provider_bound",
+              "task_matched",
+              "attempt_started",
+              "attempt_completed",
+              "verification_succeeded",
+              "credit_transferred",
+              "capacity_released"
+            ],
+            "id": "IA_institutional_path",
+            "kind": "member_event_subsequence",
+            "member": "IA"
+          },
+          {
+            "description": "IC: executor, capacity owner, prospective payee and payee are one successor-principal.",
+            "fields": [
+              "executor_id",
+              "capacity_owner_id",
+              "prospective_payee_id",
+              "payee_id"
+            ],
+            "id": "IC_successor_bundle",
+            "kind": "member_fields_equal",
+            "member": "IC"
+          },
+          {
+            "description": "IC: the copied-capacity executor is a persistent economic principal.",
+            "field": "executor_kind",
+            "id": "IC_executor_is_principal",
+            "kind": "member_field_equals",
+            "member": "IC",
+            "value": "principal"
+          },
+          {
+            "description": "IC: the payee for the copied capacity is the fission successor created for it.",
+            "field": "payee_id",
+            "id": "IC_payee_is_fission_successor",
+            "kind": "member_field_in_summary",
+            "member": "IC",
+            "summary_key": "fission_successors_created"
+          },
+          {
+            "description": "IC: the source successor is a co-obligor but is not paid.",
+            "fields": [
+              "payee_id",
+              "source_provider_id"
+            ],
+            "id": "IC_payee_is_not_copy_source",
+            "kind": "member_fields_distinct",
+            "member": "IC"
+          },
+          {
+            "description": "IC: fission, inherited commitment, successor offer, successor-set binding, execute, verify, settle, resolve joint duty, release.",
+            "event_types": [
+              "principal_fissioned",
+              "successor_commitment_inherited",
+              "successor_offer_registered",
+              "successor_set_bound",
+              "task_matched",
+              "attempt_started",
+              "attempt_completed",
+              "verification_succeeded",
+              "credit_transferred",
+              "joint_duty_resolved",
+              "capacity_released"
+            ],
+            "id": "IC_institutional_path",
+            "kind": "member_event_subsequence",
+            "member": "IC"
+          },
+          {
+            "description": "The two paired traces follow different institutional event paths.  IC's fission, inherited-commitment and successor-set events cannot occur in IA's trace: they are outside IA's declared event vocabulary, which the kernel and trace audit enforce.",
+            "fields": [
+              "event_types"
+            ],
+            "id": "different_institutional_paths",
+            "kind": "differ_across_members"
+          }
+        ],
+        "institution_ids": [
+          "IA",
+          "IC"
+        ],
+        "paired_trace_selector": {
+          "kind": "lowest_task_id",
+          "require": {
+            "capacity_origin": "copy",
+            "settlement_kind": "transferred",
+            "verification_outcome": "succeeded"
+          },
+          "same_capacity_across_members": true
+        },
+        "profile_id": "IA_IC",
+        "require_same_technical_projection": true
+      }
+    }
+  },
+  "run": {
+    "acceptance_criteria": [
+      {
+        "expected": 40,
+        "field": "principal_count",
+        "institution": "IA",
+        "observed": 40,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 24,
+        "field": "principal_count",
+        "institution": "IB",
+        "observed": 24,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 40,
+        "field": "principal_count",
+        "institution": "IC",
+        "observed": 40,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 32,
+        "field": "capacity_count",
+        "institution": "IA",
+        "observed": 32,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 64,
+        "field": "tasks_posted",
+        "institution": "IA",
+        "observed": 64,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 32,
+        "field": "distinct_capacities_used",
+        "institution": "IA",
+        "observed": 32,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 4,
+        "field": "max_simultaneous_slot_occupancy",
+        "institution": "IA",
+        "observed": 4,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 64,
+        "field": "tasks_terminal",
+        "institution": "IA",
+        "observed": 64,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "field": "final_reserved_credits",
+        "institution": "IA",
+        "observed": 0,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "field": "final_occupied_slots",
+        "institution": "IA",
+        "observed": 0,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 64,
+        "field": "initial_total_credits",
+        "institution": "IA",
+        "observed": 64,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 64,
+        "field": "final_total_credits",
+        "institution": "IA",
+        "observed": 64,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "field": "invariant_violation_count",
+        "institution": "IA",
+        "observed": 0,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "field": "copied_capacity_successes",
+        "institution": "IA",
+        "observed": 32,
+        "op": ">=",
+        "passed": true
+      },
+      {
+        "expected": 32,
+        "field": "capacity_count",
+        "institution": "IB",
+        "observed": 32,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 64,
+        "field": "tasks_posted",
+        "institution": "IB",
+        "observed": 64,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 32,
+        "field": "distinct_capacities_used",
+        "institution": "IB",
+        "observed": 32,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 4,
+        "field": "max_simultaneous_slot_occupancy",
+        "institution": "IB",
+        "observed": 4,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 64,
+        "field": "tasks_terminal",
+        "institution": "IB",
+        "observed": 64,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "field": "final_reserved_credits",
+        "institution": "IB",
+        "observed": 0,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "field": "final_occupied_slots",
+        "institution": "IB",
+        "observed": 0,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 64,
+        "field": "initial_total_credits",
+        "institution": "IB",
+        "observed": 64,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 64,
+        "field": "final_total_credits",
+        "institution": "IB",
+        "observed": 64,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "field": "invariant_violation_count",
+        "institution": "IB",
+        "observed": 0,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "field": "copied_capacity_successes",
+        "institution": "IB",
+        "observed": 32,
+        "op": ">=",
+        "passed": true
+      },
+      {
+        "expected": 32,
+        "field": "capacity_count",
+        "institution": "IC",
+        "observed": 32,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 64,
+        "field": "tasks_posted",
+        "institution": "IC",
+        "observed": 64,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 32,
+        "field": "distinct_capacities_used",
+        "institution": "IC",
+        "observed": 32,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 4,
+        "field": "max_simultaneous_slot_occupancy",
+        "institution": "IC",
+        "observed": 4,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 64,
+        "field": "tasks_terminal",
+        "institution": "IC",
+        "observed": 64,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "field": "final_reserved_credits",
+        "institution": "IC",
+        "observed": 0,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "field": "final_occupied_slots",
+        "institution": "IC",
+        "observed": 0,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 64,
+        "field": "initial_total_credits",
+        "institution": "IC",
+        "observed": 64,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 64,
+        "field": "final_total_credits",
+        "institution": "IC",
+        "observed": 64,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "field": "invariant_violation_count",
+        "institution": "IC",
+        "observed": 0,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "field": "copied_capacity_successes",
+        "institution": "IC",
+        "observed": 32,
+        "op": ">=",
+        "passed": true
+      },
+      {
+        "expected": 0,
+        "field": "temporary_executors_active_at_end",
+        "institution": "IB",
+        "observed": 0,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 16,
+        "field": "fission_successor_count",
+        "institution": "IC",
+        "observed": 16,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 16,
+        "field": "fission_events",
+        "institution": "IC",
+        "observed": 16,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 16,
+        "field": "standing_commitments_registered",
+        "institution": "IC",
+        "observed": 16,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 16,
+        "field": "inherited_commitments",
+        "institution": "IC",
+        "observed": 16,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 64,
+        "field": "joint_duties_bound",
+        "institution": "IC",
+        "observed": 64,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 64,
+        "field": "joint_duties_resolved",
+        "institution": "IC",
+        "observed": 64,
+        "op": "==",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "field": "multi_member_duties_bound",
+        "institution": "IC",
+        "observed": 56,
+        "op": ">=",
+        "passed": true
+      },
+      {
+        "expected": 1,
+        "field": "copied_successor_payments",
+        "institution": "IC",
+        "observed": 32,
+        "op": ">=",
+        "passed": true
+      }
+    ],
+    "comparison_profiles": [
+      "IA_IB",
+      "IA_IC"
+    ],
+    "institutions": [
+      "IA",
+      "IB",
+      "IC"
+    ],
+    "interpretation": "Constructive consistency and existence witness under one declared finite scenario. Differences between institutions are institutional (positions, rights, state, process, payees), not evidence of superiority; no elapsed-time, success-rate or concentration outcome is primary.",
+    "label": "PRIMARY",
+    "master_seed": 20261112,
+    "nonprimary_reasons": [],
+    "primary": true,
+    "scenario_hash": "f0ec1decc0256820929553511842cc2577363da9f3355a2e410f4a2a9916b6f7",
+    "valid": true,
+    "validity_statement": {
+      "all_tasks_terminal": true,
+      "comparison_profiles_passed": true,
+      "copied_capacity_produced_settled_exchange": true,
+      "credits_conserved": true,
+      "no_invariant_violations": true,
+      "no_reservations_remaining": true,
+      "no_slots_occupied": true,
+      "no_temporary_executors_remaining": true
+    }
+  }
+}

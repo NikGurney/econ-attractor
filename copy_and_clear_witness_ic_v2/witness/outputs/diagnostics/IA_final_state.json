@@ -1,0 +1,785 @@
+{
+  "bindings": {
+    "T000": {
+      "capacity_id": "C000",
+      "provider_id": "P000",
+      "status": "discharged"
+    },
+    "T001": {
+      "capacity_id": "C001",
+      "provider_id": "P001",
+      "status": "discharged"
+    },
+    "T002": {
+      "capacity_id": "C002",
+      "provider_id": "P002",
+      "status": "discharged"
+    },
+    "T003": {
+      "capacity_id": "C003",
+      "provider_id": "P003",
+      "status": "discharged"
+    },
+    "T004": {
+      "capacity_id": "C004",
+      "provider_id": "P004",
+      "status": "discharged"
+    },
+    "T005": {
+      "capacity_id": "C005",
+      "provider_id": "P005",
+      "status": "discharged"
+    },
+    "T006": {
+      "capacity_id": "C006",
+      "provider_id": "P006",
+      "status": "discharged"
+    },
+    "T007": {
+      "capacity_id": "C007",
+      "provider_id": "P007",
+      "status": "discharged"
+    },
+    "T008": {
+      "capacity_id": "C008",
+      "provider_id": "P008",
+      "status": "discharged"
+    },
+    "T009": {
+      "capacity_id": "C009",
+      "provider_id": "P009",
+      "status": "discharged"
+    },
+    "T010": {
+      "capacity_id": "C010",
+      "provider_id": "P010",
+      "status": "discharged"
+    },
+    "T011": {
+      "capacity_id": "C011",
+      "provider_id": "P011",
+      "status": "discharged"
+    },
+    "T012": {
+      "capacity_id": "C012",
+      "provider_id": "P012",
+      "status": "discharged"
+    },
+    "T013": {
+      "capacity_id": "C013",
+      "provider_id": "P013",
+      "status": "discharged"
+    },
+    "T014": {
+      "capacity_id": "C014",
+      "provider_id": "P014",
+      "status": "discharged"
+    },
+    "T015": {
+      "capacity_id": "C015",
+      "provider_id": "P015",
+      "status": "discharged"
+    },
+    "T016": {
+      "capacity_id": "C016",
+      "provider_id": "CP000",
+      "status": "discharged"
+    },
+    "T017": {
+      "capacity_id": "C017",
+      "provider_id": "CP001",
+      "status": "discharged"
+    },
+    "T018": {
+      "capacity_id": "C018",
+      "provider_id": "CP002",
+      "status": "discharged"
+    },
+    "T019": {
+      "capacity_id": "C019",
+      "provider_id": "CP003",
+      "status": "discharged"
+    },
+    "T020": {
+      "capacity_id": "C020",
+      "provider_id": "CP004",
+      "status": "discharged"
+    },
+    "T021": {
+      "capacity_id": "C021",
+      "provider_id": "CP005",
+      "status": "discharged"
+    },
+    "T022": {
+      "capacity_id": "C022",
+      "provider_id": "CP006",
+      "status": "discharged"
+    },
+    "T023": {
+      "capacity_id": "C023",
+      "provider_id": "CP007",
+      "status": "discharged"
+    },
+    "T024": {
+      "capacity_id": "C024",
+      "provider_id": "CP008",
+      "status": "discharged"
+    },
+    "T025": {
+      "capacity_id": "C025",
+      "provider_id": "CP009",
+      "status": "discharged"
+    },
+    "T026": {
+      "capacity_id": "C026",
+      "provider_id": "CP010",
+      "status": "discharged"
+    },
+    "T027": {
+      "capacity_id": "C027",
+      "provider_id": "CP011",
+      "status": "discharged"
+    },
+    "T028": {
+      "capacity_id": "C028",
+      "provider_id": "CP012",
+      "status": "discharged"
+    },
+    "T029": {
+      "capacity_id": "C029",
+      "provider_id": "CP013",
+      "status": "discharged"
+    },
+    "T030": {
+      "capacity_id": "C030",
+      "provider_id": "CP014",
+      "status": "discharged"
+    },
+    "T031": {
+      "capacity_id": "C031",
+      "provider_id": "CP015",
+      "status": "discharged"
+    },
+    "T032": {
+      "capacity_id": "C000",
+      "provider_id": "P000",
+      "status": "discharged"
+    },
+    "T033": {
+      "capacity_id": "C001",
+      "provider_id": "P001",
+      "status": "discharged"
+    },
+    "T034": {
+      "capacity_id": "C002",
+      "provider_id": "P002",
+      "status": "discharged"
+    },
+    "T035": {
+      "capacity_id": "C003",
+      "provider_id": "P003",
+      "status": "discharged"
+    },
+    "T036": {
+      "capacity_id": "C004",
+      "provider_id": "P004",
+      "status": "discharged"
+    },
+    "T037": {
+      "capacity_id": "C005",
+      "provider_id": "P005",
+      "status": "discharged"
+    },
+    "T038": {
+      "capacity_id": "C006",
+      "provider_id": "P006",
+      "status": "discharged"
+    },
+    "T039": {
+      "capacity_id": "C007",
+      "provider_id": "P007",
+      "status": "discharged"
+    },
+    "T040": {
+      "capacity_id": "C008",
+      "provider_id": "P008",
+      "status": "discharged"
+    },
+    "T041": {
+      "capacity_id": "C009",
+      "provider_id": "P009",
+      "status": "discharged"
+    },
+    "T042": {
+      "capacity_id": "C010",
+      "provider_id": "P010",
+      "status": "discharged"
+    },
+    "T043": {
+      "capacity_id": "C011",
+      "provider_id": "P011",
+      "status": "discharged"
+    },
+    "T044": {
+      "capacity_id": "C012",
+      "provider_id": "P012",
+      "status": "discharged"
+    },
+    "T045": {
+      "capacity_id": "C013",
+      "provider_id": "P013",
+      "status": "discharged"
+    },
+    "T046": {
+      "capacity_id": "C014",
+      "provider_id": "P014",
+      "status": "discharged"
+    },
+    "T047": {
+      "capacity_id": "C015",
+      "provider_id": "P015",
+      "status": "discharged"
+    },
+    "T048": {
+      "capacity_id": "C016",
+      "provider_id": "CP000",
+      "status": "discharged"
+    },
+    "T049": {
+      "capacity_id": "C017",
+      "provider_id": "CP001",
+      "status": "discharged"
+    },
+    "T050": {
+      "capacity_id": "C018",
+      "provider_id": "CP002",
+      "status": "discharged"
+    },
+    "T051": {
+      "capacity_id": "C019",
+      "provider_id": "CP003",
+      "status": "discharged"
+    },
+    "T052": {
+      "capacity_id": "C020",
+      "provider_id": "CP004",
+      "status": "discharged"
+    },
+    "T053": {
+      "capacity_id": "C021",
+      "provider_id": "CP005",
+      "status": "discharged"
+    },
+    "T054": {
+      "capacity_id": "C022",
+      "provider_id": "CP006",
+      "status": "discharged"
+    },
+    "T055": {
+      "capacity_id": "C023",
+      "provider_id": "CP007",
+      "status": "discharged"
+    },
+    "T056": {
+      "capacity_id": "C024",
+      "provider_id": "CP008",
+      "status": "discharged"
+    },
+    "T057": {
+      "capacity_id": "C025",
+      "provider_id": "CP009",
+      "status": "discharged"
+    },
+    "T058": {
+      "capacity_id": "C026",
+      "provider_id": "CP010",
+      "status": "discharged"
+    },
+    "T059": {
+      "capacity_id": "C027",
+      "provider_id": "CP011",
+      "status": "discharged"
+    },
+    "T060": {
+      "capacity_id": "C028",
+      "provider_id": "CP012",
+      "status": "discharged"
+    },
+    "T061": {
+      "capacity_id": "C029",
+      "provider_id": "CP013",
+      "status": "discharged"
+    },
+    "T062": {
+      "capacity_id": "C030",
+      "provider_id": "CP014",
+      "status": "discharged"
+    },
+    "T063": {
+      "capacity_id": "C031",
+      "provider_id": "CP015",
+      "status": "discharged"
+    }
+  },
+  "capacity_owner": {
+    "C000": "P000",
+    "C001": "P001",
+    "C002": "P002",
+    "C003": "P003",
+    "C004": "P004",
+    "C005": "P005",
+    "C006": "P006",
+    "C007": "P007",
+    "C008": "P008",
+    "C009": "P009",
+    "C010": "P010",
+    "C011": "P011",
+    "C012": "P012",
+    "C013": "P013",
+    "C014": "P014",
+    "C015": "P015",
+    "C016": "CP000",
+    "C017": "CP001",
+    "C018": "CP002",
+    "C019": "CP003",
+    "C020": "CP004",
+    "C021": "CP005",
+    "C022": "CP006",
+    "C023": "CP007",
+    "C024": "CP008",
+    "C025": "CP009",
+    "C026": "CP010",
+    "C027": "CP011",
+    "C028": "CP012",
+    "C029": "CP013",
+    "C030": "CP014",
+    "C031": "CP015"
+  },
+  "copied_principals": [
+    "CP000",
+    "CP001",
+    "CP002",
+    "CP003",
+    "CP004",
+    "CP005",
+    "CP006",
+    "CP007",
+    "CP008",
+    "CP009",
+    "CP010",
+    "CP011",
+    "CP012",
+    "CP013",
+    "CP014",
+    "CP015"
+  ],
+  "cursor": 0,
+  "offers": {
+    "C000": {
+      "capacity_id": "C000",
+      "offer_id": "O-C000",
+      "provider_id": "P000",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C001": {
+      "capacity_id": "C001",
+      "offer_id": "O-C001",
+      "provider_id": "P001",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C002": {
+      "capacity_id": "C002",
+      "offer_id": "O-C002",
+      "provider_id": "P002",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C003": {
+      "capacity_id": "C003",
+      "offer_id": "O-C003",
+      "provider_id": "P003",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C004": {
+      "capacity_id": "C004",
+      "offer_id": "O-C004",
+      "provider_id": "P004",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C005": {
+      "capacity_id": "C005",
+      "offer_id": "O-C005",
+      "provider_id": "P005",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C006": {
+      "capacity_id": "C006",
+      "offer_id": "O-C006",
+      "provider_id": "P006",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C007": {
+      "capacity_id": "C007",
+      "offer_id": "O-C007",
+      "provider_id": "P007",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C008": {
+      "capacity_id": "C008",
+      "offer_id": "O-C008",
+      "provider_id": "P008",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C009": {
+      "capacity_id": "C009",
+      "offer_id": "O-C009",
+      "provider_id": "P009",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C010": {
+      "capacity_id": "C010",
+      "offer_id": "O-C010",
+      "provider_id": "P010",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C011": {
+      "capacity_id": "C011",
+      "offer_id": "O-C011",
+      "provider_id": "P011",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C012": {
+      "capacity_id": "C012",
+      "offer_id": "O-C012",
+      "provider_id": "P012",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C013": {
+      "capacity_id": "C013",
+      "offer_id": "O-C013",
+      "provider_id": "P013",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C014": {
+      "capacity_id": "C014",
+      "offer_id": "O-C014",
+      "provider_id": "P014",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C015": {
+      "capacity_id": "C015",
+      "offer_id": "O-C015",
+      "provider_id": "P015",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C016": {
+      "capacity_id": "C016",
+      "offer_id": "O-C016",
+      "provider_id": "CP000",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C017": {
+      "capacity_id": "C017",
+      "offer_id": "O-C017",
+      "provider_id": "CP001",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C018": {
+      "capacity_id": "C018",
+      "offer_id": "O-C018",
+      "provider_id": "CP002",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C019": {
+      "capacity_id": "C019",
+      "offer_id": "O-C019",
+      "provider_id": "CP003",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C020": {
+      "capacity_id": "C020",
+      "offer_id": "O-C020",
+      "provider_id": "CP004",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C021": {
+      "capacity_id": "C021",
+      "offer_id": "O-C021",
+      "provider_id": "CP005",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C022": {
+      "capacity_id": "C022",
+      "offer_id": "O-C022",
+      "provider_id": "CP006",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C023": {
+      "capacity_id": "C023",
+      "offer_id": "O-C023",
+      "provider_id": "CP007",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C024": {
+      "capacity_id": "C024",
+      "offer_id": "O-C024",
+      "provider_id": "CP008",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C025": {
+      "capacity_id": "C025",
+      "offer_id": "O-C025",
+      "provider_id": "CP009",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C026": {
+      "capacity_id": "C026",
+      "offer_id": "O-C026",
+      "provider_id": "CP010",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C027": {
+      "capacity_id": "C027",
+      "offer_id": "O-C027",
+      "provider_id": "CP011",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C028": {
+      "capacity_id": "C028",
+      "offer_id": "O-C028",
+      "provider_id": "CP012",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C029": {
+      "capacity_id": "C029",
+      "offer_id": "O-C029",
+      "provider_id": "CP013",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C030": {
+      "capacity_id": "C030",
+      "offer_id": "O-C030",
+      "provider_id": "CP014",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    },
+    "C031": {
+      "capacity_id": "C031",
+      "offer_id": "O-C031",
+      "provider_id": "CP015",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "validity": "batch"
+    }
+  },
+  "positions": {
+    "CP000": "provider",
+    "CP001": "provider",
+    "CP002": "provider",
+    "CP003": "provider",
+    "CP004": "provider",
+    "CP005": "provider",
+    "CP006": "provider",
+    "CP007": "provider",
+    "CP008": "provider",
+    "CP009": "provider",
+    "CP010": "provider",
+    "CP011": "provider",
+    "CP012": "provider",
+    "CP013": "provider",
+    "CP014": "provider",
+    "CP015": "provider",
+    "P000": "provider",
+    "P001": "provider",
+    "P002": "provider",
+    "P003": "provider",
+    "P004": "provider",
+    "P005": "provider",
+    "P006": "provider",
+    "P007": "provider",
+    "P008": "provider",
+    "P009": "provider",
+    "P010": "provider",
+    "P011": "provider",
+    "P012": "provider",
+    "P013": "provider",
+    "P014": "provider",
+    "P015": "provider",
+    "R000": "requester",
+    "R001": "requester",
+    "R002": "requester",
+    "R003": "requester",
+    "R004": "requester",
+    "R005": "requester",
+    "R006": "requester",
+    "R007": "requester"
+  },
+  "principal_class": {
+    "CP000": "copied_supplier",
+    "CP001": "copied_supplier",
+    "CP002": "copied_supplier",
+    "CP003": "copied_supplier",
+    "CP004": "copied_supplier",
+    "CP005": "copied_supplier",
+    "CP006": "copied_supplier",
+    "CP007": "copied_supplier",
+    "CP008": "copied_supplier",
+    "CP009": "copied_supplier",
+    "CP010": "copied_supplier",
+    "CP011": "copied_supplier",
+    "CP012": "copied_supplier",
+    "CP013": "copied_supplier",
+    "CP014": "copied_supplier",
+    "CP015": "copied_supplier",
+    "P000": "founding_provider",
+    "P001": "founding_provider",
+    "P002": "founding_provider",
+    "P003": "founding_provider",
+    "P004": "founding_provider",
+    "P005": "founding_provider",
+    "P006": "founding_provider",
+    "P007": "founding_provider",
+    "P008": "founding_provider",
+    "P009": "founding_provider",
+    "P010": "founding_provider",
+    "P011": "founding_provider",
+    "P012": "founding_provider",
+    "P013": "founding_provider",
+    "P014": "founding_provider",
+    "P015": "founding_provider",
+    "R000": "requester",
+    "R001": "requester",
+    "R002": "requester",
+    "R003": "requester",
+    "R004": "requester",
+    "R005": "requester",
+    "R006": "requester",
+    "R007": "requester"
+  },
+  "realized_payees": {
+    "T000": "P000",
+    "T001": "P001",
+    "T002": "P002",
+    "T003": "P003",
+    "T004": "P004",
+    "T005": "P005",
+    "T006": "P006",
+    "T007": "P007",
+    "T008": "P008",
+    "T009": "P009",
+    "T010": "P010",
+    "T011": "P011",
+    "T012": "P012",
+    "T013": "P013",
+    "T014": "P014",
+    "T015": "P015",
+    "T016": "CP000",
+    "T017": "CP001",
+    "T018": "CP002",
+    "T019": "CP003",
+    "T020": "CP004",
+    "T021": "CP005",
+    "T022": "CP006",
+    "T023": "CP007",
+    "T024": "CP008",
+    "T025": "CP009",
+    "T026": "CP010",
+    "T027": "CP011",
+    "T028": "CP012",
+    "T029": "CP013",
+    "T030": "CP014",
+    "T031": "CP015",
+    "T032": "P000",
+    "T033": "P001",
+    "T034": "P002",
+    "T035": "P003",
+    "T036": "P004",
+    "T037": "P005",
+    "T038": "P006",
+    "T039": "P007",
+    "T040": "P008",
+    "T041": "P009",
+    "T042": "P010",
+    "T043": "P011",
+    "T044": "P012",
+    "T045": "P013",
+    "T046": "P014",
+    "T047": "P015",
+    "T048": "CP000",
+    "T049": "CP001",
+    "T050": "CP002",
+    "T051": "CP003",
+    "T052": "CP004",
+    "T053": "CP005",
+    "T054": "CP006",
+    "T055": "CP007",
+    "T056": "CP008",
+    "T057": "CP009",
+    "T058": "CP010",
+    "T059": "CP011",
+    "T060": "CP012",
+    "T061": "CP013",
+    "T062": "CP014",
+    "T063": "CP015"
+  }
+}

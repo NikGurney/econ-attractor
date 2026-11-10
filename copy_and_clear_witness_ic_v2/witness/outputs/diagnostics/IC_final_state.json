@@ -1,0 +1,1673 @@
+{
+  "bindings": {
+    "T000": {
+      "capacity_id": "C000",
+      "co_obligor_ids": [
+        "FS007",
+        "FS010",
+        "P000"
+      ],
+      "duty_id": "JD-T000",
+      "executor_id": "P000",
+      "lineage_root_id": "P000",
+      "status": "discharged"
+    },
+    "T001": {
+      "capacity_id": "C001",
+      "co_obligor_ids": [
+        "FS001",
+        "FS005",
+        "P001"
+      ],
+      "duty_id": "JD-T001",
+      "executor_id": "P001",
+      "lineage_root_id": "P001",
+      "status": "discharged"
+    },
+    "T002": {
+      "capacity_id": "C002",
+      "co_obligor_ids": [
+        "P002"
+      ],
+      "duty_id": "JD-T002",
+      "executor_id": "P002",
+      "lineage_root_id": "P002",
+      "status": "discharged"
+    },
+    "T003": {
+      "capacity_id": "C003",
+      "co_obligor_ids": [
+        "FS015",
+        "P003"
+      ],
+      "duty_id": "JD-T003",
+      "executor_id": "P003",
+      "lineage_root_id": "P003",
+      "status": "discharged"
+    },
+    "T004": {
+      "capacity_id": "C004",
+      "co_obligor_ids": [
+        "FS002",
+        "P004"
+      ],
+      "duty_id": "JD-T004",
+      "executor_id": "P004",
+      "lineage_root_id": "P004",
+      "status": "discharged"
+    },
+    "T005": {
+      "capacity_id": "C005",
+      "co_obligor_ids": [
+        "P005"
+      ],
+      "duty_id": "JD-T005",
+      "executor_id": "P005",
+      "lineage_root_id": "P005",
+      "status": "discharged"
+    },
+    "T006": {
+      "capacity_id": "C006",
+      "co_obligor_ids": [
+        "FS013",
+        "P006"
+      ],
+      "duty_id": "JD-T006",
+      "executor_id": "P006",
+      "lineage_root_id": "P006",
+      "status": "discharged"
+    },
+    "T007": {
+      "capacity_id": "C007",
+      "co_obligor_ids": [
+        "FS003",
+        "P007"
+      ],
+      "duty_id": "JD-T007",
+      "executor_id": "P007",
+      "lineage_root_id": "P007",
+      "status": "discharged"
+    },
+    "T008": {
+      "capacity_id": "C008",
+      "co_obligor_ids": [
+        "P008"
+      ],
+      "duty_id": "JD-T008",
+      "executor_id": "P008",
+      "lineage_root_id": "P008",
+      "status": "discharged"
+    },
+    "T009": {
+      "capacity_id": "C009",
+      "co_obligor_ids": [
+        "FS008",
+        "P009"
+      ],
+      "duty_id": "JD-T009",
+      "executor_id": "P009",
+      "lineage_root_id": "P009",
+      "status": "discharged"
+    },
+    "T010": {
+      "capacity_id": "C010",
+      "co_obligor_ids": [
+        "FS004",
+        "FS009",
+        "P010"
+      ],
+      "duty_id": "JD-T010",
+      "executor_id": "P010",
+      "lineage_root_id": "P010",
+      "status": "discharged"
+    },
+    "T011": {
+      "capacity_id": "C011",
+      "co_obligor_ids": [
+        "FS014",
+        "P011"
+      ],
+      "duty_id": "JD-T011",
+      "executor_id": "P011",
+      "lineage_root_id": "P011",
+      "status": "discharged"
+    },
+    "T012": {
+      "capacity_id": "C012",
+      "co_obligor_ids": [
+        "FS006",
+        "P012"
+      ],
+      "duty_id": "JD-T012",
+      "executor_id": "P012",
+      "lineage_root_id": "P012",
+      "status": "discharged"
+    },
+    "T013": {
+      "capacity_id": "C013",
+      "co_obligor_ids": [
+        "FS000",
+        "P013"
+      ],
+      "duty_id": "JD-T013",
+      "executor_id": "P013",
+      "lineage_root_id": "P013",
+      "status": "discharged"
+    },
+    "T014": {
+      "capacity_id": "C014",
+      "co_obligor_ids": [
+        "P014"
+      ],
+      "duty_id": "JD-T014",
+      "executor_id": "P014",
+      "lineage_root_id": "P014",
+      "status": "discharged"
+    },
+    "T015": {
+      "capacity_id": "C015",
+      "co_obligor_ids": [
+        "FS011",
+        "FS012",
+        "P015"
+      ],
+      "duty_id": "JD-T015",
+      "executor_id": "P015",
+      "lineage_root_id": "P015",
+      "status": "discharged"
+    },
+    "T016": {
+      "capacity_id": "C016",
+      "co_obligor_ids": [
+        "FS000",
+        "P013"
+      ],
+      "duty_id": "JD-T016",
+      "executor_id": "FS000",
+      "lineage_root_id": "P013",
+      "status": "discharged"
+    },
+    "T017": {
+      "capacity_id": "C017",
+      "co_obligor_ids": [
+        "FS001",
+        "FS005",
+        "P001"
+      ],
+      "duty_id": "JD-T017",
+      "executor_id": "FS001",
+      "lineage_root_id": "P001",
+      "status": "discharged"
+    },
+    "T018": {
+      "capacity_id": "C018",
+      "co_obligor_ids": [
+        "FS002",
+        "P004"
+      ],
+      "duty_id": "JD-T018",
+      "executor_id": "FS002",
+      "lineage_root_id": "P004",
+      "status": "discharged"
+    },
+    "T019": {
+      "capacity_id": "C019",
+      "co_obligor_ids": [
+        "FS003",
+        "P007"
+      ],
+      "duty_id": "JD-T019",
+      "executor_id": "FS003",
+      "lineage_root_id": "P007",
+      "status": "discharged"
+    },
+    "T020": {
+      "capacity_id": "C020",
+      "co_obligor_ids": [
+        "FS004",
+        "FS009",
+        "P010"
+      ],
+      "duty_id": "JD-T020",
+      "executor_id": "FS004",
+      "lineage_root_id": "P010",
+      "status": "discharged"
+    },
+    "T021": {
+      "capacity_id": "C021",
+      "co_obligor_ids": [
+        "FS001",
+        "FS005",
+        "P001"
+      ],
+      "duty_id": "JD-T021",
+      "executor_id": "FS005",
+      "lineage_root_id": "P001",
+      "status": "discharged"
+    },
+    "T022": {
+      "capacity_id": "C022",
+      "co_obligor_ids": [
+        "FS006",
+        "P012"
+      ],
+      "duty_id": "JD-T022",
+      "executor_id": "FS006",
+      "lineage_root_id": "P012",
+      "status": "discharged"
+    },
+    "T023": {
+      "capacity_id": "C023",
+      "co_obligor_ids": [
+        "FS007",
+        "FS010",
+        "P000"
+      ],
+      "duty_id": "JD-T023",
+      "executor_id": "FS007",
+      "lineage_root_id": "P000",
+      "status": "discharged"
+    },
+    "T024": {
+      "capacity_id": "C024",
+      "co_obligor_ids": [
+        "FS008",
+        "P009"
+      ],
+      "duty_id": "JD-T024",
+      "executor_id": "FS008",
+      "lineage_root_id": "P009",
+      "status": "discharged"
+    },
+    "T025": {
+      "capacity_id": "C025",
+      "co_obligor_ids": [
+        "FS004",
+        "FS009",
+        "P010"
+      ],
+      "duty_id": "JD-T025",
+      "executor_id": "FS009",
+      "lineage_root_id": "P010",
+      "status": "discharged"
+    },
+    "T026": {
+      "capacity_id": "C026",
+      "co_obligor_ids": [
+        "FS007",
+        "FS010",
+        "P000"
+      ],
+      "duty_id": "JD-T026",
+      "executor_id": "FS010",
+      "lineage_root_id": "P000",
+      "status": "discharged"
+    },
+    "T027": {
+      "capacity_id": "C027",
+      "co_obligor_ids": [
+        "FS011",
+        "FS012",
+        "P015"
+      ],
+      "duty_id": "JD-T027",
+      "executor_id": "FS011",
+      "lineage_root_id": "P015",
+      "status": "discharged"
+    },
+    "T028": {
+      "capacity_id": "C028",
+      "co_obligor_ids": [
+        "FS011",
+        "FS012",
+        "P015"
+      ],
+      "duty_id": "JD-T028",
+      "executor_id": "FS012",
+      "lineage_root_id": "P015",
+      "status": "discharged"
+    },
+    "T029": {
+      "capacity_id": "C029",
+      "co_obligor_ids": [
+        "FS013",
+        "P006"
+      ],
+      "duty_id": "JD-T029",
+      "executor_id": "FS013",
+      "lineage_root_id": "P006",
+      "status": "discharged"
+    },
+    "T030": {
+      "capacity_id": "C030",
+      "co_obligor_ids": [
+        "FS014",
+        "P011"
+      ],
+      "duty_id": "JD-T030",
+      "executor_id": "FS014",
+      "lineage_root_id": "P011",
+      "status": "discharged"
+    },
+    "T031": {
+      "capacity_id": "C031",
+      "co_obligor_ids": [
+        "FS015",
+        "P003"
+      ],
+      "duty_id": "JD-T031",
+      "executor_id": "FS015",
+      "lineage_root_id": "P003",
+      "status": "discharged"
+    },
+    "T032": {
+      "capacity_id": "C000",
+      "co_obligor_ids": [
+        "FS007",
+        "FS010",
+        "P000"
+      ],
+      "duty_id": "JD-T032",
+      "executor_id": "P000",
+      "lineage_root_id": "P000",
+      "status": "discharged"
+    },
+    "T033": {
+      "capacity_id": "C001",
+      "co_obligor_ids": [
+        "FS001",
+        "FS005",
+        "P001"
+      ],
+      "duty_id": "JD-T033",
+      "executor_id": "P001",
+      "lineage_root_id": "P001",
+      "status": "discharged"
+    },
+    "T034": {
+      "capacity_id": "C002",
+      "co_obligor_ids": [
+        "P002"
+      ],
+      "duty_id": "JD-T034",
+      "executor_id": "P002",
+      "lineage_root_id": "P002",
+      "status": "discharged"
+    },
+    "T035": {
+      "capacity_id": "C003",
+      "co_obligor_ids": [
+        "FS015",
+        "P003"
+      ],
+      "duty_id": "JD-T035",
+      "executor_id": "P003",
+      "lineage_root_id": "P003",
+      "status": "discharged"
+    },
+    "T036": {
+      "capacity_id": "C004",
+      "co_obligor_ids": [
+        "FS002",
+        "P004"
+      ],
+      "duty_id": "JD-T036",
+      "executor_id": "P004",
+      "lineage_root_id": "P004",
+      "status": "discharged"
+    },
+    "T037": {
+      "capacity_id": "C005",
+      "co_obligor_ids": [
+        "P005"
+      ],
+      "duty_id": "JD-T037",
+      "executor_id": "P005",
+      "lineage_root_id": "P005",
+      "status": "discharged"
+    },
+    "T038": {
+      "capacity_id": "C006",
+      "co_obligor_ids": [
+        "FS013",
+        "P006"
+      ],
+      "duty_id": "JD-T038",
+      "executor_id": "P006",
+      "lineage_root_id": "P006",
+      "status": "discharged"
+    },
+    "T039": {
+      "capacity_id": "C007",
+      "co_obligor_ids": [
+        "FS003",
+        "P007"
+      ],
+      "duty_id": "JD-T039",
+      "executor_id": "P007",
+      "lineage_root_id": "P007",
+      "status": "discharged"
+    },
+    "T040": {
+      "capacity_id": "C008",
+      "co_obligor_ids": [
+        "P008"
+      ],
+      "duty_id": "JD-T040",
+      "executor_id": "P008",
+      "lineage_root_id": "P008",
+      "status": "discharged"
+    },
+    "T041": {
+      "capacity_id": "C009",
+      "co_obligor_ids": [
+        "FS008",
+        "P009"
+      ],
+      "duty_id": "JD-T041",
+      "executor_id": "P009",
+      "lineage_root_id": "P009",
+      "status": "discharged"
+    },
+    "T042": {
+      "capacity_id": "C010",
+      "co_obligor_ids": [
+        "FS004",
+        "FS009",
+        "P010"
+      ],
+      "duty_id": "JD-T042",
+      "executor_id": "P010",
+      "lineage_root_id": "P010",
+      "status": "discharged"
+    },
+    "T043": {
+      "capacity_id": "C011",
+      "co_obligor_ids": [
+        "FS014",
+        "P011"
+      ],
+      "duty_id": "JD-T043",
+      "executor_id": "P011",
+      "lineage_root_id": "P011",
+      "status": "discharged"
+    },
+    "T044": {
+      "capacity_id": "C012",
+      "co_obligor_ids": [
+        "FS006",
+        "P012"
+      ],
+      "duty_id": "JD-T044",
+      "executor_id": "P012",
+      "lineage_root_id": "P012",
+      "status": "discharged"
+    },
+    "T045": {
+      "capacity_id": "C013",
+      "co_obligor_ids": [
+        "FS000",
+        "P013"
+      ],
+      "duty_id": "JD-T045",
+      "executor_id": "P013",
+      "lineage_root_id": "P013",
+      "status": "discharged"
+    },
+    "T046": {
+      "capacity_id": "C014",
+      "co_obligor_ids": [
+        "P014"
+      ],
+      "duty_id": "JD-T046",
+      "executor_id": "P014",
+      "lineage_root_id": "P014",
+      "status": "discharged"
+    },
+    "T047": {
+      "capacity_id": "C015",
+      "co_obligor_ids": [
+        "FS011",
+        "FS012",
+        "P015"
+      ],
+      "duty_id": "JD-T047",
+      "executor_id": "P015",
+      "lineage_root_id": "P015",
+      "status": "discharged"
+    },
+    "T048": {
+      "capacity_id": "C016",
+      "co_obligor_ids": [
+        "FS000",
+        "P013"
+      ],
+      "duty_id": "JD-T048",
+      "executor_id": "FS000",
+      "lineage_root_id": "P013",
+      "status": "discharged"
+    },
+    "T049": {
+      "capacity_id": "C017",
+      "co_obligor_ids": [
+        "FS001",
+        "FS005",
+        "P001"
+      ],
+      "duty_id": "JD-T049",
+      "executor_id": "FS001",
+      "lineage_root_id": "P001",
+      "status": "discharged"
+    },
+    "T050": {
+      "capacity_id": "C018",
+      "co_obligor_ids": [
+        "FS002",
+        "P004"
+      ],
+      "duty_id": "JD-T050",
+      "executor_id": "FS002",
+      "lineage_root_id": "P004",
+      "status": "discharged"
+    },
+    "T051": {
+      "capacity_id": "C019",
+      "co_obligor_ids": [
+        "FS003",
+        "P007"
+      ],
+      "duty_id": "JD-T051",
+      "executor_id": "FS003",
+      "lineage_root_id": "P007",
+      "status": "discharged"
+    },
+    "T052": {
+      "capacity_id": "C020",
+      "co_obligor_ids": [
+        "FS004",
+        "FS009",
+        "P010"
+      ],
+      "duty_id": "JD-T052",
+      "executor_id": "FS004",
+      "lineage_root_id": "P010",
+      "status": "discharged"
+    },
+    "T053": {
+      "capacity_id": "C021",
+      "co_obligor_ids": [
+        "FS001",
+        "FS005",
+        "P001"
+      ],
+      "duty_id": "JD-T053",
+      "executor_id": "FS005",
+      "lineage_root_id": "P001",
+      "status": "discharged"
+    },
+    "T054": {
+      "capacity_id": "C022",
+      "co_obligor_ids": [
+        "FS006",
+        "P012"
+      ],
+      "duty_id": "JD-T054",
+      "executor_id": "FS006",
+      "lineage_root_id": "P012",
+      "status": "discharged"
+    },
+    "T055": {
+      "capacity_id": "C023",
+      "co_obligor_ids": [
+        "FS007",
+        "FS010",
+        "P000"
+      ],
+      "duty_id": "JD-T055",
+      "executor_id": "FS007",
+      "lineage_root_id": "P000",
+      "status": "discharged"
+    },
+    "T056": {
+      "capacity_id": "C024",
+      "co_obligor_ids": [
+        "FS008",
+        "P009"
+      ],
+      "duty_id": "JD-T056",
+      "executor_id": "FS008",
+      "lineage_root_id": "P009",
+      "status": "discharged"
+    },
+    "T057": {
+      "capacity_id": "C025",
+      "co_obligor_ids": [
+        "FS004",
+        "FS009",
+        "P010"
+      ],
+      "duty_id": "JD-T057",
+      "executor_id": "FS009",
+      "lineage_root_id": "P010",
+      "status": "discharged"
+    },
+    "T058": {
+      "capacity_id": "C026",
+      "co_obligor_ids": [
+        "FS007",
+        "FS010",
+        "P000"
+      ],
+      "duty_id": "JD-T058",
+      "executor_id": "FS010",
+      "lineage_root_id": "P000",
+      "status": "discharged"
+    },
+    "T059": {
+      "capacity_id": "C027",
+      "co_obligor_ids": [
+        "FS011",
+        "FS012",
+        "P015"
+      ],
+      "duty_id": "JD-T059",
+      "executor_id": "FS011",
+      "lineage_root_id": "P015",
+      "status": "discharged"
+    },
+    "T060": {
+      "capacity_id": "C028",
+      "co_obligor_ids": [
+        "FS011",
+        "FS012",
+        "P015"
+      ],
+      "duty_id": "JD-T060",
+      "executor_id": "FS012",
+      "lineage_root_id": "P015",
+      "status": "discharged"
+    },
+    "T061": {
+      "capacity_id": "C029",
+      "co_obligor_ids": [
+        "FS013",
+        "P006"
+      ],
+      "duty_id": "JD-T061",
+      "executor_id": "FS013",
+      "lineage_root_id": "P006",
+      "status": "discharged"
+    },
+    "T062": {
+      "capacity_id": "C030",
+      "co_obligor_ids": [
+        "FS014",
+        "P011"
+      ],
+      "duty_id": "JD-T062",
+      "executor_id": "FS014",
+      "lineage_root_id": "P011",
+      "status": "discharged"
+    },
+    "T063": {
+      "capacity_id": "C031",
+      "co_obligor_ids": [
+        "FS015",
+        "P003"
+      ],
+      "duty_id": "JD-T063",
+      "executor_id": "FS015",
+      "lineage_root_id": "P003",
+      "status": "discharged"
+    }
+  },
+  "capacity_owner": {
+    "C000": "P000",
+    "C001": "P001",
+    "C002": "P002",
+    "C003": "P003",
+    "C004": "P004",
+    "C005": "P005",
+    "C006": "P006",
+    "C007": "P007",
+    "C008": "P008",
+    "C009": "P009",
+    "C010": "P010",
+    "C011": "P011",
+    "C012": "P012",
+    "C013": "P013",
+    "C014": "P014",
+    "C015": "P015",
+    "C016": "FS000",
+    "C017": "FS001",
+    "C018": "FS002",
+    "C019": "FS003",
+    "C020": "FS004",
+    "C021": "FS005",
+    "C022": "FS006",
+    "C023": "FS007",
+    "C024": "FS008",
+    "C025": "FS009",
+    "C026": "FS010",
+    "C027": "FS011",
+    "C028": "FS012",
+    "C029": "FS013",
+    "C030": "FS014",
+    "C031": "FS015"
+  },
+  "cursor": 0,
+  "fissions": {
+    "FS000": {
+      "capacity_id": "C016",
+      "copy_draw_index": 0,
+      "inherited_commitment_id": "SC-P013",
+      "lineage_id": "LIN-P013",
+      "lineage_root_id": "P013",
+      "status": "effective",
+      "successor_id": "FS000"
+    },
+    "FS001": {
+      "capacity_id": "C017",
+      "copy_draw_index": 1,
+      "inherited_commitment_id": "SC-P001",
+      "lineage_id": "LIN-P001",
+      "lineage_root_id": "P001",
+      "status": "effective",
+      "successor_id": "FS001"
+    },
+    "FS002": {
+      "capacity_id": "C018",
+      "copy_draw_index": 2,
+      "inherited_commitment_id": "SC-P004",
+      "lineage_id": "LIN-P004",
+      "lineage_root_id": "P004",
+      "status": "effective",
+      "successor_id": "FS002"
+    },
+    "FS003": {
+      "capacity_id": "C019",
+      "copy_draw_index": 3,
+      "inherited_commitment_id": "SC-P007",
+      "lineage_id": "LIN-P007",
+      "lineage_root_id": "P007",
+      "status": "effective",
+      "successor_id": "FS003"
+    },
+    "FS004": {
+      "capacity_id": "C020",
+      "copy_draw_index": 4,
+      "inherited_commitment_id": "SC-P010",
+      "lineage_id": "LIN-P010",
+      "lineage_root_id": "P010",
+      "status": "effective",
+      "successor_id": "FS004"
+    },
+    "FS005": {
+      "capacity_id": "C021",
+      "copy_draw_index": 5,
+      "inherited_commitment_id": "SC-P001",
+      "lineage_id": "LIN-P001",
+      "lineage_root_id": "P001",
+      "status": "effective",
+      "successor_id": "FS005"
+    },
+    "FS006": {
+      "capacity_id": "C022",
+      "copy_draw_index": 6,
+      "inherited_commitment_id": "SC-P012",
+      "lineage_id": "LIN-P012",
+      "lineage_root_id": "P012",
+      "status": "effective",
+      "successor_id": "FS006"
+    },
+    "FS007": {
+      "capacity_id": "C023",
+      "copy_draw_index": 7,
+      "inherited_commitment_id": "SC-P000",
+      "lineage_id": "LIN-P000",
+      "lineage_root_id": "P000",
+      "status": "effective",
+      "successor_id": "FS007"
+    },
+    "FS008": {
+      "capacity_id": "C024",
+      "copy_draw_index": 8,
+      "inherited_commitment_id": "SC-P009",
+      "lineage_id": "LIN-P009",
+      "lineage_root_id": "P009",
+      "status": "effective",
+      "successor_id": "FS008"
+    },
+    "FS009": {
+      "capacity_id": "C025",
+      "copy_draw_index": 9,
+      "inherited_commitment_id": "SC-P010",
+      "lineage_id": "LIN-P010",
+      "lineage_root_id": "P010",
+      "status": "effective",
+      "successor_id": "FS009"
+    },
+    "FS010": {
+      "capacity_id": "C026",
+      "copy_draw_index": 10,
+      "inherited_commitment_id": "SC-P000",
+      "lineage_id": "LIN-P000",
+      "lineage_root_id": "P000",
+      "status": "effective",
+      "successor_id": "FS010"
+    },
+    "FS011": {
+      "capacity_id": "C027",
+      "copy_draw_index": 11,
+      "inherited_commitment_id": "SC-P015",
+      "lineage_id": "LIN-P015",
+      "lineage_root_id": "P015",
+      "status": "effective",
+      "successor_id": "FS011"
+    },
+    "FS012": {
+      "capacity_id": "C028",
+      "copy_draw_index": 12,
+      "inherited_commitment_id": "SC-P015",
+      "lineage_id": "LIN-P015",
+      "lineage_root_id": "P015",
+      "status": "effective",
+      "successor_id": "FS012"
+    },
+    "FS013": {
+      "capacity_id": "C029",
+      "copy_draw_index": 13,
+      "inherited_commitment_id": "SC-P006",
+      "lineage_id": "LIN-P006",
+      "lineage_root_id": "P006",
+      "status": "effective",
+      "successor_id": "FS013"
+    },
+    "FS014": {
+      "capacity_id": "C030",
+      "copy_draw_index": 14,
+      "inherited_commitment_id": "SC-P011",
+      "lineage_id": "LIN-P011",
+      "lineage_root_id": "P011",
+      "status": "effective",
+      "successor_id": "FS014"
+    },
+    "FS015": {
+      "capacity_id": "C031",
+      "copy_draw_index": 15,
+      "inherited_commitment_id": "SC-P003",
+      "lineage_id": "LIN-P003",
+      "lineage_root_id": "P003",
+      "status": "effective",
+      "successor_id": "FS015"
+    }
+  },
+  "lineage_root_of": {
+    "FS000": "P013",
+    "FS001": "P001",
+    "FS002": "P004",
+    "FS003": "P007",
+    "FS004": "P010",
+    "FS005": "P001",
+    "FS006": "P012",
+    "FS007": "P000",
+    "FS008": "P009",
+    "FS009": "P010",
+    "FS010": "P000",
+    "FS011": "P015",
+    "FS012": "P015",
+    "FS013": "P006",
+    "FS014": "P011",
+    "FS015": "P003",
+    "P000": "P000",
+    "P001": "P001",
+    "P002": "P002",
+    "P003": "P003",
+    "P004": "P004",
+    "P005": "P005",
+    "P006": "P006",
+    "P007": "P007",
+    "P008": "P008",
+    "P009": "P009",
+    "P010": "P010",
+    "P011": "P011",
+    "P012": "P012",
+    "P013": "P013",
+    "P014": "P014",
+    "P015": "P015"
+  },
+  "members_by_root": {
+    "P000": [
+      "FS007",
+      "FS010",
+      "P000"
+    ],
+    "P001": [
+      "FS001",
+      "FS005",
+      "P001"
+    ],
+    "P002": [
+      "P002"
+    ],
+    "P003": [
+      "FS015",
+      "P003"
+    ],
+    "P004": [
+      "FS002",
+      "P004"
+    ],
+    "P005": [
+      "P005"
+    ],
+    "P006": [
+      "FS013",
+      "P006"
+    ],
+    "P007": [
+      "FS003",
+      "P007"
+    ],
+    "P008": [
+      "P008"
+    ],
+    "P009": [
+      "FS008",
+      "P009"
+    ],
+    "P010": [
+      "FS004",
+      "FS009",
+      "P010"
+    ],
+    "P011": [
+      "FS014",
+      "P011"
+    ],
+    "P012": [
+      "FS006",
+      "P012"
+    ],
+    "P013": [
+      "FS000",
+      "P013"
+    ],
+    "P014": [
+      "P014"
+    ],
+    "P015": [
+      "FS011",
+      "FS012",
+      "P015"
+    ]
+  },
+  "offers": {
+    "C000": {
+      "capacity_id": "C000",
+      "commitment_id": "SC-P000",
+      "offer_id": "O-C000",
+      "provider_id": "P000",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C001": {
+      "capacity_id": "C001",
+      "commitment_id": "SC-P001",
+      "offer_id": "O-C001",
+      "provider_id": "P001",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C002": {
+      "capacity_id": "C002",
+      "commitment_id": "SC-P002",
+      "offer_id": "O-C002",
+      "provider_id": "P002",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C003": {
+      "capacity_id": "C003",
+      "commitment_id": "SC-P003",
+      "offer_id": "O-C003",
+      "provider_id": "P003",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C004": {
+      "capacity_id": "C004",
+      "commitment_id": "SC-P004",
+      "offer_id": "O-C004",
+      "provider_id": "P004",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C005": {
+      "capacity_id": "C005",
+      "commitment_id": "SC-P005",
+      "offer_id": "O-C005",
+      "provider_id": "P005",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C006": {
+      "capacity_id": "C006",
+      "commitment_id": "SC-P006",
+      "offer_id": "O-C006",
+      "provider_id": "P006",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C007": {
+      "capacity_id": "C007",
+      "commitment_id": "SC-P007",
+      "offer_id": "O-C007",
+      "provider_id": "P007",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C008": {
+      "capacity_id": "C008",
+      "commitment_id": "SC-P008",
+      "offer_id": "O-C008",
+      "provider_id": "P008",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C009": {
+      "capacity_id": "C009",
+      "commitment_id": "SC-P009",
+      "offer_id": "O-C009",
+      "provider_id": "P009",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C010": {
+      "capacity_id": "C010",
+      "commitment_id": "SC-P010",
+      "offer_id": "O-C010",
+      "provider_id": "P010",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C011": {
+      "capacity_id": "C011",
+      "commitment_id": "SC-P011",
+      "offer_id": "O-C011",
+      "provider_id": "P011",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C012": {
+      "capacity_id": "C012",
+      "commitment_id": "SC-P012",
+      "offer_id": "O-C012",
+      "provider_id": "P012",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C013": {
+      "capacity_id": "C013",
+      "commitment_id": "SC-P013",
+      "offer_id": "O-C013",
+      "provider_id": "P013",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C014": {
+      "capacity_id": "C014",
+      "commitment_id": "SC-P014",
+      "offer_id": "O-C014",
+      "provider_id": "P014",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C015": {
+      "capacity_id": "C015",
+      "commitment_id": "SC-P015",
+      "offer_id": "O-C015",
+      "provider_id": "P015",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C016": {
+      "capacity_id": "C016",
+      "commitment_id": "SC-P013",
+      "offer_id": "O-C016",
+      "provider_id": "FS000",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C017": {
+      "capacity_id": "C017",
+      "commitment_id": "SC-P001",
+      "offer_id": "O-C017",
+      "provider_id": "FS001",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C018": {
+      "capacity_id": "C018",
+      "commitment_id": "SC-P004",
+      "offer_id": "O-C018",
+      "provider_id": "FS002",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C019": {
+      "capacity_id": "C019",
+      "commitment_id": "SC-P007",
+      "offer_id": "O-C019",
+      "provider_id": "FS003",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C020": {
+      "capacity_id": "C020",
+      "commitment_id": "SC-P010",
+      "offer_id": "O-C020",
+      "provider_id": "FS004",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C021": {
+      "capacity_id": "C021",
+      "commitment_id": "SC-P001",
+      "offer_id": "O-C021",
+      "provider_id": "FS005",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C022": {
+      "capacity_id": "C022",
+      "commitment_id": "SC-P012",
+      "offer_id": "O-C022",
+      "provider_id": "FS006",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C023": {
+      "capacity_id": "C023",
+      "commitment_id": "SC-P000",
+      "offer_id": "O-C023",
+      "provider_id": "FS007",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C024": {
+      "capacity_id": "C024",
+      "commitment_id": "SC-P009",
+      "offer_id": "O-C024",
+      "provider_id": "FS008",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C025": {
+      "capacity_id": "C025",
+      "commitment_id": "SC-P010",
+      "offer_id": "O-C025",
+      "provider_id": "FS009",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C026": {
+      "capacity_id": "C026",
+      "commitment_id": "SC-P000",
+      "offer_id": "O-C026",
+      "provider_id": "FS010",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C027": {
+      "capacity_id": "C027",
+      "commitment_id": "SC-P015",
+      "offer_id": "O-C027",
+      "provider_id": "FS011",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C028": {
+      "capacity_id": "C028",
+      "commitment_id": "SC-P015",
+      "offer_id": "O-C028",
+      "provider_id": "FS012",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C029": {
+      "capacity_id": "C029",
+      "commitment_id": "SC-P006",
+      "offer_id": "O-C029",
+      "provider_id": "FS013",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C030": {
+      "capacity_id": "C030",
+      "commitment_id": "SC-P011",
+      "offer_id": "O-C030",
+      "provider_id": "FS014",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    },
+    "C031": {
+      "capacity_id": "C031",
+      "commitment_id": "SC-P003",
+      "offer_id": "O-C031",
+      "provider_id": "FS015",
+      "revocable_during_batch": false,
+      "scope": "all_tasks",
+      "status": "active",
+      "validity": "batch"
+    }
+  },
+  "positions": {
+    "FS000": "provider_successor",
+    "FS001": "provider_successor",
+    "FS002": "provider_successor",
+    "FS003": "provider_successor",
+    "FS004": "provider_successor",
+    "FS005": "provider_successor",
+    "FS006": "provider_successor",
+    "FS007": "provider_successor",
+    "FS008": "provider_successor",
+    "FS009": "provider_successor",
+    "FS010": "provider_successor",
+    "FS011": "provider_successor",
+    "FS012": "provider_successor",
+    "FS013": "provider_successor",
+    "FS014": "provider_successor",
+    "FS015": "provider_successor",
+    "P000": "provider_successor",
+    "P001": "provider_successor",
+    "P002": "provider_successor",
+    "P003": "provider_successor",
+    "P004": "provider_successor",
+    "P005": "provider_successor",
+    "P006": "provider_successor",
+    "P007": "provider_successor",
+    "P008": "provider_successor",
+    "P009": "provider_successor",
+    "P010": "provider_successor",
+    "P011": "provider_successor",
+    "P012": "provider_successor",
+    "P013": "provider_successor",
+    "P014": "provider_successor",
+    "P015": "provider_successor",
+    "R000": "requester",
+    "R001": "requester",
+    "R002": "requester",
+    "R003": "requester",
+    "R004": "requester",
+    "R005": "requester",
+    "R006": "requester",
+    "R007": "requester"
+  },
+  "principal_class": {
+    "FS000": "fission_successor",
+    "FS001": "fission_successor",
+    "FS002": "fission_successor",
+    "FS003": "fission_successor",
+    "FS004": "fission_successor",
+    "FS005": "fission_successor",
+    "FS006": "fission_successor",
+    "FS007": "fission_successor",
+    "FS008": "fission_successor",
+    "FS009": "fission_successor",
+    "FS010": "fission_successor",
+    "FS011": "fission_successor",
+    "FS012": "fission_successor",
+    "FS013": "fission_successor",
+    "FS014": "fission_successor",
+    "FS015": "fission_successor",
+    "P000": "founding_provider",
+    "P001": "founding_provider",
+    "P002": "founding_provider",
+    "P003": "founding_provider",
+    "P004": "founding_provider",
+    "P005": "founding_provider",
+    "P006": "founding_provider",
+    "P007": "founding_provider",
+    "P008": "founding_provider",
+    "P009": "founding_provider",
+    "P010": "founding_provider",
+    "P011": "founding_provider",
+    "P012": "founding_provider",
+    "P013": "founding_provider",
+    "P014": "founding_provider",
+    "P015": "founding_provider",
+    "R000": "requester",
+    "R001": "requester",
+    "R002": "requester",
+    "R003": "requester",
+    "R004": "requester",
+    "R005": "requester",
+    "R006": "requester",
+    "R007": "requester"
+  },
+  "realized_payees": {
+    "T000": "P000",
+    "T001": "P001",
+    "T002": "P002",
+    "T003": "P003",
+    "T004": "P004",
+    "T005": "P005",
+    "T006": "P006",
+    "T007": "P007",
+    "T008": "P008",
+    "T009": "P009",
+    "T010": "P010",
+    "T011": "P011",
+    "T012": "P012",
+    "T013": "P013",
+    "T014": "P014",
+    "T015": "P015",
+    "T016": "FS000",
+    "T017": "FS001",
+    "T018": "FS002",
+    "T019": "FS003",
+    "T020": "FS004",
+    "T021": "FS005",
+    "T022": "FS006",
+    "T023": "FS007",
+    "T024": "FS008",
+    "T025": "FS009",
+    "T026": "FS010",
+    "T027": "FS011",
+    "T028": "FS012",
+    "T029": "FS013",
+    "T030": "FS014",
+    "T031": "FS015",
+    "T032": "P000",
+    "T033": "P001",
+    "T034": "P002",
+    "T035": "P003",
+    "T036": "P004",
+    "T037": "P005",
+    "T038": "P006",
+    "T039": "P007",
+    "T040": "P008",
+    "T041": "P009",
+    "T042": "P010",
+    "T043": "P011",
+    "T044": "P012",
+    "T045": "P013",
+    "T046": "P014",
+    "T047": "P015",
+    "T048": "FS000",
+    "T049": "FS001",
+    "T050": "FS002",
+    "T051": "FS003",
+    "T052": "FS004",
+    "T053": "FS005",
+    "T054": "FS006",
+    "T055": "FS007",
+    "T056": "FS008",
+    "T057": "FS009",
+    "T058": "FS010",
+    "T059": "FS011",
+    "T060": "FS012",
+    "T061": "FS013",
+    "T062": "FS014",
+    "T063": "FS015"
+  },
+  "standing_commitments": {
+    "P000": {
+      "commitment_id": "SC-P000",
+      "lineage_id": "LIN-P000",
+      "lineage_root_id": "P000",
+      "members": [
+        "FS007",
+        "FS010",
+        "P000"
+      ],
+      "scope": "all_tasks",
+      "status": "active"
+    },
+    "P001": {
+      "commitment_id": "SC-P001",
+      "lineage_id": "LIN-P001",
+      "lineage_root_id": "P001",
+      "members": [
+        "FS001",
+        "FS005",
+        "P001"
+      ],
+      "scope": "all_tasks",
+      "status": "active"
+    },
+    "P002": {
+      "commitment_id": "SC-P002",
+      "lineage_id": "LIN-P002",
+      "lineage_root_id": "P002",
+      "members": [
+        "P002"
+      ],
+      "scope": "all_tasks",
+      "status": "active"
+    },
+    "P003": {
+      "commitment_id": "SC-P003",
+      "lineage_id": "LIN-P003",
+      "lineage_root_id": "P003",
+      "members": [
+        "FS015",
+        "P003"
+      ],
+      "scope": "all_tasks",
+      "status": "active"
+    },
+    "P004": {
+      "commitment_id": "SC-P004",
+      "lineage_id": "LIN-P004",
+      "lineage_root_id": "P004",
+      "members": [
+        "FS002",
+        "P004"
+      ],
+      "scope": "all_tasks",
+      "status": "active"
+    },
+    "P005": {
+      "commitment_id": "SC-P005",
+      "lineage_id": "LIN-P005",
+      "lineage_root_id": "P005",
+      "members": [
+        "P005"
+      ],
+      "scope": "all_tasks",
+      "status": "active"
+    },
+    "P006": {
+      "commitment_id": "SC-P006",
+      "lineage_id": "LIN-P006",
+      "lineage_root_id": "P006",
+      "members": [
+        "FS013",
+        "P006"
+      ],
+      "scope": "all_tasks",
+      "status": "active"
+    },
+    "P007": {
+      "commitment_id": "SC-P007",
+      "lineage_id": "LIN-P007",
+      "lineage_root_id": "P007",
+      "members": [
+        "FS003",
+        "P007"
+      ],
+      "scope": "all_tasks",
+      "status": "active"
+    },
+    "P008": {
+      "commitment_id": "SC-P008",
+      "lineage_id": "LIN-P008",
+      "lineage_root_id": "P008",
+      "members": [
+        "P008"
+      ],
+      "scope": "all_tasks",
+      "status": "active"
+    },
+    "P009": {
+      "commitment_id": "SC-P009",
+      "lineage_id": "LIN-P009",
+      "lineage_root_id": "P009",
+      "members": [
+        "FS008",
+        "P009"
+      ],
+      "scope": "all_tasks",
+      "status": "active"
+    },
+    "P010": {
+      "commitment_id": "SC-P010",
+      "lineage_id": "LIN-P010",
+      "lineage_root_id": "P010",
+      "members": [
+        "FS004",
+        "FS009",
+        "P010"
+      ],
+      "scope": "all_tasks",
+      "status": "active"
+    },
+    "P011": {
+      "commitment_id": "SC-P011",
+      "lineage_id": "LIN-P011",
+      "lineage_root_id": "P011",
+      "members": [
+        "FS014",
+        "P011"
+      ],
+      "scope": "all_tasks",
+      "status": "active"
+    },
+    "P012": {
+      "commitment_id": "SC-P012",
+      "lineage_id": "LIN-P012",
+      "lineage_root_id": "P012",
+      "members": [
+        "FS006",
+        "P012"
+      ],
+      "scope": "all_tasks",
+      "status": "active"
+    },
+    "P013": {
+      "commitment_id": "SC-P013",
+      "lineage_id": "LIN-P013",
+      "lineage_root_id": "P013",
+      "members": [
+        "FS000",
+        "P013"
+      ],
+      "scope": "all_tasks",
+      "status": "active"
+    },
+    "P014": {
+      "commitment_id": "SC-P014",
+      "lineage_id": "LIN-P014",
+      "lineage_root_id": "P014",
+      "members": [
+        "P014"
+      ],
+      "scope": "all_tasks",
+      "status": "active"
+    },
+    "P015": {
+      "commitment_id": "SC-P015",
+      "lineage_id": "LIN-P015",
+      "lineage_root_id": "P015",
+      "members": [
+        "FS011",
+        "FS012",
+        "P015"
+      ],
+      "scope": "all_tasks",
+      "status": "active"
+    }
+  },
+  "successor_for_capacity": {
+    "C016": "FS000",
+    "C017": "FS001",
+    "C018": "FS002",
+    "C019": "FS003",
+    "C020": "FS004",
+    "C021": "FS005",
+    "C022": "FS006",
+    "C023": "FS007",
+    "C024": "FS008",
+    "C025": "FS009",
+    "C026": "FS010",
+    "C027": "FS011",
+    "C028": "FS012",
+    "C029": "FS013",
+    "C030": "FS014",
+    "C031": "FS015"
+  }
+}
